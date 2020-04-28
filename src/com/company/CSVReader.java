@@ -18,10 +18,11 @@ public class CSVReader
             else                    d = dateiLesenDyn(args[0], ",");
         } catch (FileNotFoundException | IndexOutOfBoundsException e) {
             System.out.println("Reverting to Test File");
-            d = dateiLesenDyn("/home/chris/IdeaProjects/WTV/src/com/company/test1", ",");
+            d = dateiLesenDyn("test.csv", ",");
         }
         System.out.println(Arrays.deepToString(d));
     }
+
     /*public static void dateiLesen(String name) throws IOException
     {
         FileReader fr = new FileReader(name);
@@ -51,7 +52,7 @@ public class CSVReader
         FileReader fr = new FileReader(name);
         BufferedReader br = new BufferedReader(fr);
 
-        String zeileStr = null;
+        String zeileStr;
 
         // Matrix größe bestimmen
         int a = 0;
@@ -59,7 +60,7 @@ public class CSVReader
         boolean mErr = false;
         while ((zeileStr = br.readLine()) != null)
         {
-            zeileStr.replaceAll("\\s","");
+            zeileStr = zeileStr.replaceAll("\\s","");
             a++;
             String[] s = zeileStr.split(spaltentrenner);
             if(s.length < b){
@@ -83,7 +84,7 @@ public class CSVReader
         int i = 0;
         while ((zeileStr = br.readLine()) != null)
         {
-            zeileStr.replaceAll("\\s","");
+            zeileStr = zeileStr.replaceAll("\\s","");
             String[] zeileStrArr = zeileStr.split(spaltentrenner);
             for (int x = 0; x < b; x++) {
                  try{

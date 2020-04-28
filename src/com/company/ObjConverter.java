@@ -25,14 +25,17 @@ public class ObjConverter {
     }
 
     private static String createFile(String filePath){
+        filePath = filePath.split("\\.")[0];
         String newFilePath;
         newFilePath = filePath + ".obj";
         try {
             File file = new File(newFilePath);
             int x = 0;
-            
 
-            /*Files nicht Überschreiben:
+            //Files überschreiben:
+            file.createNewFile();
+
+           /* Files nicht Überschreiben:
             while(!file.createNewFile()){
                 System.out.println("File " + x + " already exists.");
                 x++;
@@ -50,7 +53,7 @@ public class ObjConverter {
 
     private static void writeFile(double[][] d, String filePath){
         try {
-            FileWriter myWriter = new FileWriter(filePath);
+            FileWriter myWriter = new FileWriter(filePath, false);
             double midpoint = d[0][0] + d[0][1] +d[1][0] + d[1][1];
             midpoint = midpoint/4;
             myWriter.write("o " + filePath+ "\n" +
