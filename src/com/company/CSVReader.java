@@ -99,10 +99,6 @@ public class CSVReader
         return list;
     }
 
-    private static void print(){
-
-    }
-
     /*public static void dateiLesen(String name){
         File file = new File(name);
         System.out.println("'" + name + "'" + " kann gelesen werden: " + file.canRead());

@@ -30,12 +30,12 @@ public class ObjConverter {
         newFilePath = filePath + ".obj";
         try {
             File file = new File(newFilePath);
-            int x = 0;
 
             //Files überschreiben:
             file.createNewFile();
 
            /* Files nicht Überschreiben:
+            int x = 0;
             while(!file.createNewFile()){
                 System.out.println("File " + x + " already exists.");
                 x++;
