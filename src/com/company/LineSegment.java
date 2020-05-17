@@ -1,4 +1,4 @@
-package com.company.U2A2;
+package com.company;
 
 public class LineSegment {
     public double p1x;

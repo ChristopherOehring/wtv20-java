@@ -1,17 +1,17 @@
-package com.company.U2A2;
-
-import com.company.CSVReader;
+package com.company;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class SVGConverter {
-    public static void main(String[] args) throws Exception{
-        SVGCreate(args[0]);
+
+public class EPSConverter {
+
+    public static void main(String[] args) throws Exception {
+        EPSCreate(args[0]);
     }
 
-    public static void SVGCreate(String fileName) throws Exception{
+    public static void EPSCreate(String fileName) throws Exception{
         double [][] d = CSVReader.dateiLesenDyn(fileName, ",");
         LineSegment[] segments = new LineSegment[3];
         for(int i = 0; i < 3; i++){
@@ -29,7 +29,7 @@ public class SVGConverter {
     private static String createFile(String filePath){
         filePath = filePath.split("\\.")[0];
         String newFilePath;
-        newFilePath = filePath + ".svg";
+        newFilePath = filePath + ".eps";
         try {
             File file = new File(newFilePath);
             int x = 0;
@@ -41,7 +41,7 @@ public class SVGConverter {
           /*  while(!file.createNewFile()){
                 System.out.println("File " + x + " already exists.");
                 x++;
-                newFilePath = filePath + "(" + x + ").svg";
+                newFilePath = filePath + "(" + x + ").eps";
                 file = new File(newFilePath);
             }
             System.out.println("File created: " + file.getName());*/
@@ -56,14 +56,17 @@ public class SVGConverter {
     private static void writeFile(LineSegment[] s, String filePath){
         try {
             FileWriter myWriter = new FileWriter(filePath, false);
-            myWriter.write( "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" x=\"7\" y=\"7\" width=\"300\" height=\"300\"> \n" +
-                     "<polygon \n" +
-                    " points=\"" + s[0].p1x+","+s[0].p1y + " " + s[1].p1x+","+s[1].p1y + " " + s[2].p1x+","+s[2].p1y + "\"" +
-                    " stroke=\"black\"\n" +
-                    " stroke-width=\"3\"\n" +
-                    " fill=\"none\" />\n" +
-                    "</svg>"
-            );
+            String str = "%!PS-Adobe-3.0 EPSF-3.0\n" +
+                    "%%BoundingBox: 7 7 53 33 \n" +
+                    "6 setlinewidth \n";
+            for (LineSegment l: s) {
+                str = str + l.p1x + " " + l.p1y + " moveto\n" +
+                        l.p2x + " " + l.p2y + " " + "lineto\n";
+            }
+            str += "closepath\n" +
+                    "stroke";
+
+            myWriter.write(str);
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {

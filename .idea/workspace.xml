@@ -6,37 +6,18 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="Vorlesung vom 28.04.">
-      <change afterPath="$PROJECT_DIR$/map01_res3.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map01_res50.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Isolinien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Round.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Triangle.java" afterDir="false" />
+    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="Vorlesung vom 12.05.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U2A2a.eps" beforeDir="false" afterPath="$PROJECT_DIR$/U2A2a.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WTV/META-INF/WTV.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/CSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WTV/com/company/CSVReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CSVReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +151,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587474498426</updated>
       <workItem from="1589283240957" duration="18446000" />
+      <workItem from="1589712399666" duration="667000" />
+      <workItem from="1589713092625" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -185,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588101217635</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Vorlesung vom 12.05.">
+      <created>1589712608515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589712608515</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +186,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -205,7 +207,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Vorlesung vom 28.04." />
-    <option name="LAST_COMMIT_MESSAGE" value="Vorlesung vom 28.04." />
+    <MESSAGE value="Vorlesung vom 12.05." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vorlesung vom 12.05." />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
@@ -234,10 +237,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="741" y="201" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588085629829" />
-    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1588155659482">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2575" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1589713065592">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588155659482" />
+    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589712421738" />
+    <state x="2575" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589713065592" />
     <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1587808713656" />
     <state width="1877" height="241" key="GridCell.Tab.0.bottom" timestamp="1589301788846">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -279,10 +283,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299544992" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588101337445">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589712901944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588101337445" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589712901944" />
     <state x="87" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1587642734378">
       <screen x="0" y="0" width="3286" height="768" />
     </state>
@@ -292,6 +296,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588091575640" />
+    <state x="749" y="421" width="532" height="197" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1589713049831">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="749" y="421" width="532" height="197" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589713049831" />
     <state x="666" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1589292103060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
