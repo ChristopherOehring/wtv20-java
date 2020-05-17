@@ -16,24 +16,27 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/U2A2a.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interpolation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/U2A2/EPSConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/U2A2/LineSegment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/U2A2/SVGConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="Vorlesung vom 28.04.">
+      <change afterPath="$PROJECT_DIR$/map01_res3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map01_res50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Isolinien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Round.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/U2A2a.eps" beforeDir="false" afterPath="$PROJECT_DIR$/U2A2a.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WTV/META-INF/WTV.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/CSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WTV/com/company/CSVReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/ObjConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WTV/com/company/ObjConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/test1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ObjConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/test1" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,20 +63,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Chris\IdeaProjects\wtv20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EPSConverter">
+  <component name="RunManager" selected="Application.Isolinien">
     <configuration name="CSVReader" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.CSVReader" />
       <module name="WTV" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;U2A2a.csv&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;map01_res3.csv&quot;" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -94,26 +101,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Interpolation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Interpolation" />
+    <configuration name="Isolinien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Isolinien" />
       <module name="WTV" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;map01_res3.csv&quot;" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.U2A2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ObjConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.ObjConverter" />
-      <module name="WTV" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;test.csv&quot;" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.U2A2.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,20 +129,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.U2A2.test" />
+      <module name="WTV" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.U2A2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CSVReader" />
-      <item itemvalue="Application.ObjConverter" />
-      <item itemvalue="Application.Interpolation" />
-      <item itemvalue="Application.SVGConverter" />
       <item itemvalue="Application.EPSConverter" />
+      <item itemvalue="Application.SVGConverter" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.Isolinien" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Isolinien" />
+        <item itemvalue="Application.CSVReader" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.EPSConverter" />
         <item itemvalue="Application.SVGConverter" />
-        <item itemvalue="Application.ObjConverter" />
-        <item itemvalue="Application.CSVReader" />
-        <item itemvalue="Application.Interpolation" />
       </list>
     </recent_temporary>
   </component>
@@ -162,8 +169,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587474498426</updated>
+      <workItem from="1589283240957" duration="18446000" />
     </task>
+    <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
+      <created>1588101202361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588101202361</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Vorlesung vom 28.04.">
+      <created>1588101217635</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588101217635</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -177,15 +203,19 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Vorlesung vom 28.04." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vorlesung vom 28.04." />
+  </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="279" y="44" key="#Notifications/0.27.1366.711@0.27.1366.711" timestamp="1588076013438" />
-    <state x="779" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588091651826">
+    <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589299969749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="779" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588091651826" />
+    <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299969749" />
     <state x="142" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.711@0.27.1366.711" timestamp="1588075198113" />
     <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588088613833">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -196,38 +226,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="54" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588081961178" />
-    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1588086117155">
+    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1589299718935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588086117155" />
+    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299718935" />
     <state x="741" y="201" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588085629829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="741" y="201" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588085629829" />
-    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1588081957694">
+    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1588155659482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588081957694" />
+    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588155659482" />
     <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1587808713656" />
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1588093926488">
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom" timestamp="1589301788846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588093926488" />
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
     <state width="1316" height="174" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1588075811988" />
-    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1588093926488">
+    <state width="1877" height="241" key="GridCell.Tab.0.center" timestamp="1589301788846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588093926488" />
+    <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
     <state width="1316" height="174" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1588075811987" />
-    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1588093926488">
+    <state width="1877" height="241" key="GridCell.Tab.0.left" timestamp="1589301788846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588093926488" />
+    <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
     <state width="1316" height="174" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1588075811987" />
-    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1588093926488">
+    <state width="1877" height="241" key="GridCell.Tab.0.right" timestamp="1589301788846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588093926488" />
+    <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
     <state width="1316" height="174" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1588075811987" />
     <state width="1316" height="217" key="GridCell.Tab.1.bottom" timestamp="1587922027083">
       <screen x="0" y="27" width="1366" height="711" />
@@ -245,10 +275,14 @@
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1316" height="217" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1587922027082" />
-    <state x="495" y="94" key="SettingsEditor" timestamp="1588079900934">
+    <state x="275" y="275" key="SettingsEditor" timestamp="1589299544992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="495" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588079900934" />
+    <state x="275" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299544992" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588101337445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588101337445" />
     <state x="87" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1587642734378">
       <screen x="0" y="0" width="3286" height="768" />
     </state>
@@ -258,5 +292,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588091575640" />
+    <state x="666" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1589292103060">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589292103060" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589298175458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589298175458" />
   </component>
 </project>

@@ -20,7 +20,6 @@ public class CSVReader
             System.out.println("Reverting to Test File");
             d = dateiLesenDyn("test.csv", ",");
         }
-        System.out.println(Arrays.deepToString(d));
     }
 
     /*public static void dateiLesen(String name) throws IOException
@@ -91,7 +90,7 @@ public class CSVReader
                      list[i][x] = Double.parseDouble(zeileStrArr[x]);
                  } catch (Exception e){
                      e.printStackTrace();
-                     System.out.println("Möglicerweise ein falscher Spaltentrenner (Default = \",\"");
+                     System.out.println("Möglicherweise ein falscher Spaltentrenner (Default = \",\"");
                  }
             }
             i++;
