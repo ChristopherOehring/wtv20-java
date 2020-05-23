@@ -3,10 +3,7 @@ package com.company;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Stream;
+import java.util.*;
 
 public class SVGConverter {
     public static void main(String[] args) throws Exception{
@@ -28,9 +25,9 @@ public class SVGConverter {
         writeFileTriangle(segments, s);
     }
 
-    public static void SVGCreate(List<LineSegment> segments, String filePath, int width, int height){
+    public static void SVGCreateIso(Map<Double, List<LineSegment>> segments, String filePath, int width, int height){
         String s = createFile(filePath);
-        writeFileLines(segments, s, width, height);
+        writeFileIsoLines(segments, s, width, height);
     }
 
     private static String createFile(String filePath){
@@ -84,24 +81,43 @@ public class SVGConverter {
         }
     }
 
-    private static void writeFileLines(List<LineSegment> segments, String filePath, int width, int height){
+    private static void writeFileIsoLines(Map<Double, List<LineSegment>> segments, String filePath, int width, int height){
         try {
 
             double thickness = ((double) width)/200;
+            double scale = 1; //can be used to scale the output map
 
             StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")
                     .append("version=\"1.1\" x=\"1\" y=\"1\" ")
-                    .append("width=\"").append(width)
-                    .append("\" height=\"").append(height)
+                    .append("width=\"").append(width*scale)
+                    .append("\" height=\"").append(height*scale)
                     .append("\"> \n");
 
-            for (LineSegment lS: segments){
-                stringBuilder
-                        .append("<path d=\"M ")
-                        .append(Rounder.round(lS.p1x)).append(",").append(Rounder.round(lS.p1y))
-                        .append("l ").append(Rounder.round(lS.p2x-lS.p1x)).append(",").append(Rounder.round(lS.p2y-lS.p1y))
-                        .append("\" stroke=\"black\" stroke-width=\"").append(thickness).append("\" /> \n");
+            /*
+            The whole thing is pretty ineffective: It starts with a height array, from wich it generates an unsorted Map,
+            from wich it gets an unsorted Set of heights, which is converted to an array, then sorted.
+            I can't be bothered to change that thought.
+             */
+            Set<Double> h = segments.keySet();
+            Double[] heights = new Double[h.size()];
+            h.toArray(heights);
+            Arrays.sort(heights);
+
+            int i = 0;
+            for(Double d: heights) {
+                String color = lineColors(segments.size(), i);
+                i++;
+                for (LineSegment lS : segments.get(d)) {
+                    stringBuilder
+                            .append("<path d=\"M ")
+                            .append(Rounder.round(lS.p1x)*scale).append(",").append(Rounder.round(lS.p1y)*scale)
+                            .append(" l ").append(Rounder.round(lS.p2x - lS.p1x)*scale)
+                            .append(",").append(Rounder.round(lS.p2y - lS.p1y)*scale)
+                            .append("\" stroke=\"").append(color)
+                            .append("\" stroke-width=\"").append(thickness*scale).append("\" /> \n");
+                }
             }
+
             stringBuilder.append("</svg>");
 
             String file = stringBuilder.toString();
@@ -150,4 +166,20 @@ public class SVGConverter {
         }
     }
 
+    private static String lineColors(int anz, int pos){
+        String res = "rgb(";
+        int max = 510;
+        int intervall = max/anz;
+        int x = pos*intervall;
+        if(x < 255){
+            res += "255,";
+            res += x;
+        } else {
+            x = -x + 510;
+            res += x;
+            res += ",255";
+        }
+        res += ",0)";
+        return res;
+    }
 }

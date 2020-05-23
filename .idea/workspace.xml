@@ -10,20 +10,29 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="Vorlesung vom 12.05.">
+    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="fixed a small but fatal error where files could not be overwritten">
+      <change afterPath="$PROJECT_DIR$/hill_res50.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map03.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saddle_res50.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tilt_D_res50.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/U2A2/EPSConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/U2A2/LineSegment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/U2A2/SVGConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hill_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hill_res50.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map01_res3.obj" beforeDir="false" afterPath="$PROJECT_DIR$/map01_res3.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map01_res3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/map01_res3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map01_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/map01_res50.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/map03.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WTV/com/company/ObjConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WTV/com/company/ObjConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saddle_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/saddle_res50.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Isolinien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ObjConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Round.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Rounder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SVGConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tilt_D_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/tilt_D_res50.svg" afterDir="false" />
+    </list>
+    <list id="6f6e63be-279a-4e3c-aa65-93c2c6953731" name="fixed a small but fatal error where files could not be overwritten" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/company/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SVGConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +49,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/com/company/SVGConverter.java">
+      <ranges>
+        <range start1="5" end1="9" start2="5" end2="6" changelist="6f6e63be-279a-4e3c-aa65-93c2c6953731" />
+        <range start1="30" end1="31" start2="27" end2="28" changelist="6f6e63be-279a-4e3c-aa65-93c2c6953731" />
+        <range start1="32" end1="33" start2="29" end2="30" changelist="6f6e63be-279a-4e3c-aa65-93c2c6953731" />
+        <range start1="86" end1="87" start2="83" end2="84" changelist="6f6e63be-279a-4e3c-aa65-93c2c6953731" />
+        <range start1="90" end1="90" start2="87" end2="88" changelist="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" />
+        <range start1="93" end1="95" start2="91" end2="93" changelist="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" />
+        <range start1="97" end1="103" start2="95" end2="118" changelist="6f6e63be-279a-4e3c-aa65-93c2c6953731" />
+        <range start1="104" end1="104" start2="119" end2="120" changelist="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" />
+        <range start1="152" end1="152" start2="168" end2="184" changelist="6f6e63be-279a-4e3c-aa65-93c2c6953731" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1aqsXUIIQKJ3ThlfSP06WcO6fw5" />
   <component name="ProjectViewState">
@@ -162,6 +186,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="" />
+      <changelist id="6f6e63be-279a-4e3c-aa65-93c2c6953731" name="fixed a small but fatal error where files could not be overwritten" comment="" />
       <created>1587474498426</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -171,7 +196,8 @@
       <workItem from="1589713092625" duration="678000" />
       <workItem from="1589887689943" duration="14242000" />
       <workItem from="1589969808705" duration="24000" />
-      <workItem from="1590180320578" duration="16301000" />
+      <workItem from="1590180320578" duration="17334000" />
+      <workItem from="1590259919315" duration="11621000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -194,7 +220,28 @@
       <option name="project" value="LOCAL" />
       <updated>1589712608515</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Isolinien die funktionieren und so">
+      <created>1590197299996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590197299996</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed a small but fatal error where files could not be overwritten">
+      <created>1590265855809</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590265855810</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed a small but fatal error where files could not be overwritten">
+      <created>1590266060654</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590266060654</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,19 +252,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -227,7 +262,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Vorlesung vom 28.04." />
     <MESSAGE value="Vorlesung vom 12.05." />
-    <option name="LAST_COMMIT_MESSAGE" value="Vorlesung vom 12.05." />
+    <MESSAGE value="Isolinien die funktionieren und so" />
+    <MESSAGE value="fixed a small but fatal error where files could not be overwritten" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a small but fatal error where files could not be overwritten" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
@@ -252,60 +289,66 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299718935" />
-    <state x="741" y="201" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588085629829">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="97" y="27" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590261442759">
+      <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="741" y="201" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588085629829" />
-    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl" timestamp="1589969830974">
+    <state x="97" y="27" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.711@0.27.1366.711" timestamp="1590261442759" />
+    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl" timestamp="1590260279854">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589712421738" />
     <state x="2575" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589713065592" />
-    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1589969830974" />
-    <state width="1316" height="201" key="GridCell.Tab.0.bottom" timestamp="1590196831706">
+    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1590260279854" />
+    <state width="1316" height="199" key="GridCell.Tab.0.bottom" timestamp="1590276084589">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1316" height="201" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1590196831706" />
-    <state width="1316" height="201" key="GridCell.Tab.0.center" timestamp="1590196831705">
+    <state width="1316" height="199" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1590276084589" />
+    <state width="1316" height="199" key="GridCell.Tab.0.center" timestamp="1590276084588">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1316" height="201" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1590196831705" />
-    <state width="1316" height="201" key="GridCell.Tab.0.left" timestamp="1590196831704">
+    <state width="1316" height="199" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1590276084588" />
+    <state width="1316" height="199" key="GridCell.Tab.0.left" timestamp="1590276084588">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1316" height="201" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1590196831704" />
-    <state width="1316" height="201" key="GridCell.Tab.0.right" timestamp="1590196831705">
+    <state width="1316" height="199" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1590276084588" />
+    <state width="1316" height="199" key="GridCell.Tab.0.right" timestamp="1590276084588">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1316" height="201" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1590196831705" />
-    <state width="1316" height="217" key="GridCell.Tab.1.bottom" timestamp="1587922027083">
+    <state width="1316" height="199" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1590276084588" />
+    <state width="1320" height="227" key="GridCell.Tab.1.bottom" timestamp="1590270947819">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1316" height="217" key="GridCell.Tab.1.bottom/0.27.1366.711@0.27.1366.711" timestamp="1587922027083" />
-    <state width="1316" height="217" key="GridCell.Tab.1.center" timestamp="1587922027082">
+    <state width="1320" height="227" key="GridCell.Tab.1.bottom/0.27.1366.711@0.27.1366.711" timestamp="1590270947819" />
+    <state width="1320" height="227" key="GridCell.Tab.1.center" timestamp="1590270947818">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1316" height="217" key="GridCell.Tab.1.center/0.27.1366.711@0.27.1366.711" timestamp="1587922027082" />
-    <state width="1316" height="217" key="GridCell.Tab.1.left" timestamp="1587922027082">
+    <state width="1320" height="227" key="GridCell.Tab.1.center/0.27.1366.711@0.27.1366.711" timestamp="1590270947818" />
+    <state width="1320" height="227" key="GridCell.Tab.1.left" timestamp="1590270947818">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1316" height="217" key="GridCell.Tab.1.left/0.27.1366.711@0.27.1366.711" timestamp="1587922027082" />
-    <state width="1316" height="217" key="GridCell.Tab.1.right" timestamp="1587922027082">
+    <state width="1320" height="227" key="GridCell.Tab.1.left/0.27.1366.711@0.27.1366.711" timestamp="1590270947818" />
+    <state width="1320" height="227" key="GridCell.Tab.1.right" timestamp="1590270947818">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1316" height="217" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1587922027082" />
+    <state width="1320" height="227" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1590270947818" />
     <state x="275" y="275" key="SettingsEditor" timestamp="1589299544992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299544992" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589712901944">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="531" y="288" key="VCS.ChangelistChooser" timestamp="1590265963243">
+      <screen x="0" y="27" width="1366" height="711" />
+    </state>
+    <state x="531" y="288" key="VCS.ChangelistChooser/0.27.1366.711@0.27.1366.711" timestamp="1590265963243" />
+    <state x="393" y="200" key="Vcs.Push.Dialog.v2" timestamp="1590197342587">
+      <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589712901944" />
+    <state x="393" y="200" key="Vcs.Push.Dialog.v2/0.27.1366.711@0.27.1366.711" timestamp="1590197342587" />
     <state x="87" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1587642734378">
       <screen x="0" y="0" width="3286" height="768" />
     </state>
@@ -323,10 +366,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589292103060" />
-    <state x="443" y="181" width="672" height="464" key="search.everywhere.popup" timestamp="1590194954333">
+    <state x="443" y="181" width="672" height="464" key="search.everywhere.popup" timestamp="1590197005334">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589298175458" />
-    <state x="443" y="181" width="672" height="464" key="search.everywhere.popup/0.27.1366.711@0.27.1366.711" timestamp="1590194954333" />
+    <state x="443" y="181" width="672" height="464" key="search.everywhere.popup/0.27.1366.711@0.27.1366.711" timestamp="1590197005334" />
   </component>
 </project>

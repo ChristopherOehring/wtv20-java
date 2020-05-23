@@ -15,30 +15,39 @@ public class Isolinien {
 
 
         int anzLines = 10;
-        printIso("map01_res3.csv", ",", 5);
-        printIso("map01_res50.csv", ",", anzLines);
-        printIso("hill_res50.csv", ",", anzLines);
-        printIso("map03.csv", ",", anzLines);
-        printIso("saddle_res50.csv", ",", anzLines);
-        printIso("tilt_D_res50.csv", ",", anzLines);
+        List<String> x = new ArrayList<>();
+
+        x.add("map01_res3.csv");
+        x.add("hill_res50.csv");
+        x.add("map03.csv");
+        x.add("saddle_res50.csv");
+        x.add("tilt_D_res50.csv");
+
+        for(String s : x){
+            printIso(s,",", anzLines);
+            ObjConverter.objCreateTriangles(triangles(CSVReader.dateiLesenDyn(s, ",")), s);
+        }
+
     }
 
     public static void printIso(String file, String spaltentrenner, int amount) throws Exception{
         double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
         //ObjConverter.objCreateTriangles(triangles(d), file);
 
-        List<LineSegment> segments = getIsolinienForArray(d, amount);
-        SVGConverter.SVGCreate(segments, file, d.length-1, d[0].length -1);
+        Map<Double, List<LineSegment>> segments = getIsolinienForArray(d, amount);
+        SVGConverter.SVGCreateIso(segments, file, d.length-1, d[0].length -1);
     }
 
-    public static List<LineSegment> getIsolinienForArray(double[][] values, int amount){
+    public static Map<Double, List<LineSegment>> getIsolinienForArray(double[][] values, int amount){
         double min = min(values);
         double max = max(values);
         double[] heights = lineHeights(amount, min, max);
-        List<LineSegment> result = new ArrayList<>();
+        Map<Double, List<LineSegment>> result = new HashMap<>();
+        List<Triangle> triangles = triangles(values);
         for(double h: heights) {
-            result.addAll(getIsoLine(triangles(values), h));
+            result.put(h, getIsoLine(triangles,h));
         }
+
         return result;
     }
 
@@ -87,7 +96,6 @@ public class Isolinien {
         for(int i = 0; i < amount; i++){
             result[i] = min + (intervall/(amount+1)) * (i+1);
         }
-
         return result;
     }
 
@@ -145,10 +153,10 @@ public class Isolinien {
         return ((values[x][y] + values[x+1][y] + values[x][y+1] + values[x+1][y+1]) / 4.0);
     }
 
-    public static List<LineSegment> getIsoLine(List<Triangle> triangles, double lineHight) {
+    public static List<LineSegment> getIsoLine(List<Triangle> triangles, double lineHeight) {
         List<LineSegment> result = new ArrayList<>();
         for(Triangle t: triangles){
-            LineSegment s = intersectionOfTriangle(t, lineHight);
+            LineSegment s = intersectionOfTriangle(t, lineHeight);
             if(s != null){
                 //s = Rounder.round(s);
                 result.add(s);
@@ -157,17 +165,17 @@ public class Isolinien {
         return result;
     }
 
-    private static LineSegment intersectionOfTriangle(Triangle triangle, double lineHight) {
+    private static LineSegment intersectionOfTriangle(Triangle triangle, double lineHeight) {
         List<Point> points = new ArrayList<>();
-        Point a = intersectionOfLine(triangle.a, triangle.b, lineHight);
+        Point a = intersectionOfLine(triangle.a, triangle.b, lineHeight);
         if(a != null) {
             points.add(a);
         }
-        a = intersectionOfLine(triangle.b, triangle.c, lineHight);
+        a = intersectionOfLine(triangle.b, triangle.c, lineHeight);
         if(a != null) {
             points.add(a);
         }
-        a = intersectionOfLine(triangle.c, triangle.a, lineHight);
+        a = intersectionOfLine(triangle.c, triangle.a, lineHeight);
         if(a != null) {
             points.add(a);
         }
@@ -197,7 +205,6 @@ public class Isolinien {
                     a.x + (factor * (b.x-a.x)),
                     a.y + (factor * (b.y-a.y)),
                     a.z + (factor * (b.z-a.z)));
-
         }
         return p;
     }
