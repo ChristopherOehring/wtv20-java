@@ -3,9 +3,9 @@ package com.company;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class Round {
+public class Rounder {
 
-    public static final int decimalPlaces = 15;
+    public static final int decimalPlaces = 5;
 
 
     public static double round(double value) {
@@ -23,5 +23,13 @@ public class Round {
             }
         }
         return values;
+    }
+
+    public static LineSegment round(LineSegment s){
+        s.p1x = round(s.p1x);
+        s.p1y = round(s.p1y);
+        s.p2x = round(s.p2x);
+        s.p2y = round(s.p2y);
+        return s;
     }
 }
