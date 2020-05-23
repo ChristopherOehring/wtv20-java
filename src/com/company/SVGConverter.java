@@ -42,9 +42,7 @@ public class SVGConverter {
             int x = 0;
 
             //Files überschreiben:
-            if(!(file.createNewFile())){
-                throw new IOException();
-            }
+            file.createNewFile();
 
             //Files nicht Überschreiben:
             /*
