@@ -1,4 +1,6 @@
-package com.company;
+package com.company.converter;
+
+import com.company.structures.LineSegment;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -35,6 +37,7 @@ public class EPSConverter {
             int x = 0;
 
             //Files überschreiben:
+            //noinspection ResultOfMethodCallIgnored
             file.createNewFile();
 
             //Files nicht Überschreiben:
@@ -53,6 +56,7 @@ public class EPSConverter {
         return newFilePath;
     }
 
+    // TODO: 5/26/20 Introduce stringBuilder
     private static void writeFile(LineSegment[] s, String filePath){
         try {
             FileWriter myWriter = new FileWriter(filePath, false);

@@ -1,4 +1,7 @@
-package com.company;
+package com.company.converter;
+
+import com.company.structures.LineSegment;
+import com.company.processing.Rounder;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -39,6 +42,8 @@ public class SVGConverter {
             int x = 0;
 
             //Files überschreiben:
+
+            //noinspection ResultOfMethodCallIgnored
             file.createNewFile();
 
             //Files nicht Überschreiben:

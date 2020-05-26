@@ -1,4 +1,11 @@
-package com.company;
+package com.company.processing;
+
+import com.company.converter.CSVReader;
+import com.company.converter.ObjConverter;
+import com.company.converter.SVGConverter;
+import com.company.structures.LineSegment;
+import com.company.structures.Point;
+import com.company.structures.Triangle;
 
 import java.util.*;
 

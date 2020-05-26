@@ -1,9 +1,9 @@
-package com.company;
+package com.company.structures;
 
 public class Triangle {
-    Point a;
-    Point b;
-    Point c;
+    public Point a;
+    public Point b;
+    public Point c;
 
     public Triangle(Point a, Point b, Point c) {
         this.a = a;

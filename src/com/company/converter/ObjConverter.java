@@ -1,4 +1,6 @@
-package com.company;
+package com.company.converter;
+
+import com.company.structures.Triangle;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -38,7 +40,9 @@ public class ObjConverter {
             int x = 0;
 
             //Files überschreiben:
+            //noinspection ResultOfMethodCallIgnored
             file.createNewFile();
+
            /* Files nicht Überschreiben:
             while(!file.createNewFile()){
                 System.out.println("File " + x + " already exists.");

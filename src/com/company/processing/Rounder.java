@@ -1,4 +1,6 @@
-package com.company;
+package com.company.processing;
+
+import com.company.structures.LineSegment;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
