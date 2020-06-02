@@ -26,44 +26,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
+      <change afterPath="$PROJECT_DIR$/examples/test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/structures/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/structures/PathNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U2A2a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U2A2a.eps" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U2A2a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hill_res50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/hill_res50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hill_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/hill_res50.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hill_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/hill_res50.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map01_res3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map01_res3.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map01_res3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map01_res50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map01_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res50.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map01_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res50.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map03.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map03.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saddle_res50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/saddle_res50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saddle_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/saddle_res50.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saddle_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/saddle_res50.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/EPSConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/EPSConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Interpolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/Interpolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/Isolinien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/structures/LineSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/structures/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Rounder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/Rounder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/SVGConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/structures/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.eps" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tilt_D_res50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tilt_D_res50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tilt_D_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tilt_D_res50.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tilt_D_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tilt_D_res50.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/hill_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/hill_res50.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/hill_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/hill_res50.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/map01_res3.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/map01_res3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/map03.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/map03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/saddle_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/saddle_res50.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/saddle_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/saddle_res50.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/test.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/tilt_D_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tilt_D_res50.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/tilt_D_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tilt_D_res50.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/SVGConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/processing/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/Isolinien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/processing/Rounder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/Rounder.java" afterDir="false" />
     </list>
-    <list id="e4597bc9-5de3-4c50-a3e7-cfec7a023c2d" name="added colors and result scaling" comment="" />
-    <list id="6f6e63be-279a-4e3c-aa65-93c2c6953731" name="fixed a small but fatal error where files could not be overwritten" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +73,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StudiLieferservice" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -149,13 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SVGConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.U2A2.SVGConverter" />
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.test" />
       <module name="WTV" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;U2A2a.csv&quot;" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.U2A2.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,17 +159,17 @@
     <list>
       <item itemvalue="Application.CSVReader" />
       <item itemvalue="Application.EPSConverter" />
-      <item itemvalue="Application.SVGConverter" />
       <item itemvalue="Application.test" />
       <item itemvalue="Application.Isolinien" />
+      <item itemvalue="Application.test (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Isolinien" />
-        <item itemvalue="Application.CSVReader" />
+        <item itemvalue="Application.test (1)" />
         <item itemvalue="Application.test" />
+        <item itemvalue="Application.CSVReader" />
         <item itemvalue="Application.EPSConverter" />
-        <item itemvalue="Application.SVGConverter" />
       </list>
     </recent_temporary>
   </component>
@@ -202,8 +182,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="" />
-      <changelist id="6f6e63be-279a-4e3c-aa65-93c2c6953731" name="fixed a small but fatal error where files could not be overwritten" comment="" />
-      <changelist id="e4597bc9-5de3-4c50-a3e7-cfec7a023c2d" name="added colors and result scaling" comment="" />
       <created>1587474498426</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -215,7 +193,10 @@
       <workItem from="1589969808705" duration="24000" />
       <workItem from="1590180320578" duration="17334000" />
       <workItem from="1590259919315" duration="12777000" />
-      <workItem from="1590498663945" duration="1083000" />
+      <workItem from="1590498663945" duration="11837000" />
+      <workItem from="1590840943061" duration="1328000" />
+      <workItem from="1591016717586" duration="830000" />
+      <workItem from="1591019621290" duration="14891000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -287,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590278365519</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changing package structure">
+      <created>1590499829968</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590499829968</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,61 +334,66 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="54" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588081961178" />
-    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1589299718935">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="518" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1590501996401">
+      <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299718935" />
+    <state x="518" y="113" key="#com.intellij.ide.util.MemberChooser/0.27.1366.711@0.27.1366.711" timestamp="1590501996401" />
     <state x="97" y="27" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590261442759">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="741" y="201" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588085629829" />
     <state x="97" y="27" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.711@0.27.1366.711" timestamp="1590261442759" />
-    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl" timestamp="1590260279854">
+    <state x="417" y="121" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1591027027655">
+      <screen x="0" y="27" width="1366" height="711" />
+    </state>
+    <state x="417" y="121" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1366.711@0.27.1366.711" timestamp="1591027027655" />
+    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl" timestamp="1590581946433">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589712421738" />
     <state x="2575" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589713065592" />
-    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1590260279854" />
+    <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1590581946433" />
     <state x="491" y="276" key="GitRewordDialog" timestamp="1590278259868">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="491" y="276" key="GitRewordDialog/0.27.1366.711@0.27.1366.711" timestamp="1590278259868" />
-    <state width="1320" height="227" key="GridCell.Tab.0.bottom" timestamp="1590278519230">
+    <state width="1316" height="146" key="GridCell.Tab.0.bottom" timestamp="1591036724690">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1320" height="227" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1590278519230" />
-    <state width="1320" height="227" key="GridCell.Tab.0.center" timestamp="1590278519229">
+    <state width="1316" height="146" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
+    <state width="1316" height="146" key="GridCell.Tab.0.center" timestamp="1591036724690">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1320" height="227" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1590278519229" />
-    <state width="1320" height="227" key="GridCell.Tab.0.left" timestamp="1590278519228">
+    <state width="1316" height="146" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
+    <state width="1316" height="146" key="GridCell.Tab.0.left" timestamp="1591036724689">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1320" height="227" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1590278519228" />
-    <state width="1320" height="227" key="GridCell.Tab.0.right" timestamp="1590278519230">
+    <state width="1316" height="146" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1591036724689" />
+    <state width="1316" height="146" key="GridCell.Tab.0.right" timestamp="1591036724690">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589301788846" />
-    <state width="1320" height="227" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1590278519230" />
-    <state width="1320" height="227" key="GridCell.Tab.1.bottom" timestamp="1590278519231">
+    <state width="1316" height="146" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
+    <state width="1316" height="225" key="GridCell.Tab.1.bottom" timestamp="1591036331941">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1320" height="227" key="GridCell.Tab.1.bottom/0.27.1366.711@0.27.1366.711" timestamp="1590278519231" />
-    <state width="1320" height="227" key="GridCell.Tab.1.center" timestamp="1590278519230">
+    <state width="1316" height="225" key="GridCell.Tab.1.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
+    <state width="1316" height="225" key="GridCell.Tab.1.center" timestamp="1591036331940">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1320" height="227" key="GridCell.Tab.1.center/0.27.1366.711@0.27.1366.711" timestamp="1590278519230" />
-    <state width="1320" height="227" key="GridCell.Tab.1.left" timestamp="1590278519230">
+    <state width="1316" height="225" key="GridCell.Tab.1.center/0.27.1366.711@0.27.1366.711" timestamp="1591036331940" />
+    <state width="1316" height="225" key="GridCell.Tab.1.left" timestamp="1591036331940">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1320" height="227" key="GridCell.Tab.1.left/0.27.1366.711@0.27.1366.711" timestamp="1590278519230" />
-    <state width="1320" height="227" key="GridCell.Tab.1.right" timestamp="1590278519230">
+    <state width="1316" height="225" key="GridCell.Tab.1.left/0.27.1366.711@0.27.1366.711" timestamp="1591036331940" />
+    <state width="1316" height="225" key="GridCell.Tab.1.right" timestamp="1591036331941">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
-    <state width="1320" height="227" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1590278519230" />
+    <state width="1316" height="225" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
     <state x="275" y="275" key="SettingsEditor" timestamp="1589299544992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -436,5 +429,41 @@
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589298175458" />
     <state x="443" y="181" width="672" height="464" key="search.everywhere.popup/0.27.1366.711@0.27.1366.711" timestamp="1590197005334" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/processing/Isolinien.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/converter/SVGConverter.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/converter/SVGConverter.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/converter/SVGConverter.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/converter/SVGConverter.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/converter/SVGConverter.java</url>
+          <line>197</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -3,11 +3,10 @@ package com.company.processing;
 import com.company.converter.CSVReader;
 import com.company.converter.ObjConverter;
 import com.company.converter.SVGConverter;
-import com.company.structures.LineSegment;
-import com.company.structures.Point;
-import com.company.structures.Triangle;
+import com.company.structures.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Isolinien {
 
@@ -20,7 +19,6 @@ public class Isolinien {
         System.out.println(intersectionOfTriangle(t, 1));
          */
 
-
         int anzLines = 10;
         List<String> x = new ArrayList<>();
 
@@ -31,21 +29,33 @@ public class Isolinien {
         x.add("tilt_D_res50.csv");
 
         for(String s : x){
-            printIso(s,",", anzLines);
+            s = "examples/" + s;
+            printIsoByPath(s,",", anzLines);
             ObjConverter.objCreateTriangles(triangles(CSVReader.dateiLesenDyn(s, ",")), s);
         }
-
-    }
+        /*
+        String file = "examples/map01_res3.csv";
+        double[][] d = CSVReader.dateiLesenDyn(file, ",");
+        ObjConverter.objCreateTriangles(triangles(d), file);
+        printIsoByPath(file, ",", 5);
+        */
+     }
 
     public static void printIso(String file, String spaltentrenner, int amount) throws Exception{
         double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
-        //ObjConverter.objCreateTriangles(triangles(d), file);
 
-        Map<Double, List<LineSegment>> segments = getIsolinienForArray(d, amount);
-        SVGConverter.SVGCreateIso(segments, file, d.length-1, d[0].length -1);
+        Map<Double, List<LineSegment>> segments = getIsolinesForArray(d, amount);
+        SVGConverter.SVGCreateIsoFromSegments(segments, file, d.length-1, d[0].length -1);
     }
 
-    public static Map<Double, List<LineSegment>> getIsolinienForArray(double[][] values, int amount){
+    public static void printIsoByPath(String file, String spaltentrenner, int amount) throws Exception {
+        double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
+
+        Map<Double, List<PathNode>> paths = getIsolinePaths(d, amount);
+        SVGConverter.SVGCreateIsoFromPathNodes(paths, file, d.length-1, d[0].length -1);
+    }
+
+    public static Map<Double, List<LineSegment>> getIsolinesForArray(double[][] values, int amount){
         double min = min(values);
         double max = max(values);
         double[] heights = lineHeights(amount, min, max);
@@ -56,6 +66,65 @@ public class Isolinien {
         }
 
         return result;
+    }
+
+    public static Map<Double, List<PathNode>> getIsolinePaths(double[][] values, int amount){
+        double min = min(values);
+        double max = max(values);
+        double[] heights = lineHeights(amount, min, max);
+
+        List<Triangle> triangles = triangles(values);
+        Map<Double, List<PathNode>> linePaths = new HashMap<>();
+
+        for(double h: heights){
+            linePaths.put(h, getIsolinePath(triangles, h));
+        }
+
+        return linePaths;
+    }
+
+    public static List<PathNode> getIsolinePath(List<Triangle> triangles, Double lineHeight){
+        List<PathNode> result = new ArrayList<>();
+        List<LineSegment> segments = getIsoLine(triangles, lineHeight);
+
+        LineSegment current;
+        PathNode node;
+        while(segments.size() > 0){
+            current = segments.get(0);
+            node = new PathNode(current.p1x, current.p1y);
+            result.add(node);
+            segments = getIsolinePath(node, segments);
+        }
+
+        return result;
+    }
+
+
+    private static List<LineSegment> getIsolinePath(PathNode node, List<LineSegment> segments){
+        Set<PathNode> following;
+
+        Set<LineSegment> nextSegments = segments.stream()
+                .filter(s -> (s.p1x==node.getX() && s.p1y==node.getY()))
+                .collect(Collectors.toSet());
+        segments.removeAll(nextSegments);
+        following = nextSegments.stream()
+                .map(s -> new PathNode(s.p2x, s.p2y))
+                .collect(Collectors.toSet());
+
+        nextSegments = segments.stream()
+                .filter(s -> s.p2x==node.getX() && s.p2y==node.getY())
+                .collect(Collectors.toSet());
+        segments.removeAll(nextSegments);
+        following.addAll(nextSegments.stream()
+                .map(s -> new PathNode(s.p1x, s.p1y))
+                .collect(Collectors.toSet()));
+
+        node.setFollowing(following);
+
+        for(PathNode n: following){
+            segments = getIsolinePath(n, segments);
+        }
+        return segments;
     }
 
     public static double max(double[][] values) throws NoSuchElementException{
@@ -74,26 +143,6 @@ public class Isolinien {
                 .map(OptionalDouble::getAsDouble)                          // -> Double stream
                 .min(Double::compareTo)                             // -> Optional<Double>
                 .get();                                             // -> Double
-    }
-
-    public static double[][] move(double[][] values, double move) {
-        for(int i = 0; i < values.length; i++) {
-            for(int j = 0; j < values[i].length; j++) {
-                values[i][j] = values[i][j] + move;
-            }
-        }
-        return values;
-    }
-
-    public static double[][] scale(double[][] values, double scale) {
-
-        for(int i = 0; i < values.length; i++) {
-            for(int j = 0; j < values[i].length; j++) {
-                values[i][j] = values[i][j] * scale;
-
-            }
-        }
-        return values;
     }
 
     public static double[] lineHeights(int amount, double min, double max) {
@@ -164,12 +213,30 @@ public class Isolinien {
         List<LineSegment> result = new ArrayList<>();
         for(Triangle t: triangles){
             LineSegment s = intersectionOfTriangle(t, lineHeight);
+
             if(s != null){
                 //s = Rounder.round(s);
                 result.add(s);
             }
         }
         return result;
+    }
+
+    public static Pair<Map<String, LineSegment>, Map<String, LineSegment>> getIsoLineMaps(
+            List<Triangle> triangles,
+            double lineHeight) {
+
+        Map<String, LineSegment> pointMap1 = new HashMap<>();
+        Map<String, LineSegment> pointMap2 = new HashMap<>();
+
+        for(Triangle t: triangles){
+            LineSegment s = intersectionOfTriangle(t, lineHeight);
+            if(s != null){
+                pointMap1.put(s.p1x + "," + s.p1y, s);
+                pointMap1.put(s.p2x + "," + s.p2y, s);
+            }
+        }
+        return new Pair<>(pointMap1, pointMap2);
     }
 
     private static LineSegment intersectionOfTriangle(Triangle triangle, double lineHeight) {
@@ -216,7 +283,25 @@ public class Isolinien {
         return p;
     }
 
+    public static double[][] move(double[][] values, double move) {
+        for(int i = 0; i < values.length; i++) {
+            for(int j = 0; j < values[i].length; j++) {
+                values[i][j] = values[i][j] + move;
+            }
+        }
+        return values;
+    }
 
+    public static double[][] scale(double[][] values, double scale) {
+
+        for(int i = 0; i < values.length; i++) {
+            for(int j = 0; j < values[i].length; j++) {
+                values[i][j] = values[i][j] * scale;
+
+            }
+        }
+        return values;
+    }
 }
 
 

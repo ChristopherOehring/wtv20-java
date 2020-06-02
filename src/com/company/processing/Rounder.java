@@ -7,7 +7,7 @@ import java.math.RoundingMode;
 
 public class Rounder {
 
-    public static final int decimalPlaces = 5;
+    public static final int decimalPlaces = 8;
 
 
     public static double round(double value) {

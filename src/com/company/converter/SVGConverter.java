@@ -2,6 +2,7 @@ package com.company.converter;
 
 import com.company.structures.LineSegment;
 import com.company.processing.Rounder;
+import com.company.structures.PathNode;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -28,9 +29,16 @@ public class SVGConverter {
         writeFileTriangle(segments, s);
     }
 
-    public static void SVGCreateIso(Map<Double, List<LineSegment>> segments, String filePath, int width, int height){
+    public static void SVGCreateIsoFromSegments(Map<Double, List<LineSegment>> segments,
+                                                String filePath, int width, int height){
         String s = createFile(filePath);
-        writeFileIsoLines(segments, s, width, height);
+        writeFileFromSegments(segments, s, width, height);
+    }
+
+    public static void SVGCreateIsoFromPathNodes(Map<Double, List<PathNode>> linePaths,
+                                                 String filePath, int width, int height) {
+        String s = createFile(filePath);
+        writeFileFromPathNodes(linePaths, s, width, height);
     }
 
     private static String createFile(String filePath){
@@ -86,7 +94,7 @@ public class SVGConverter {
         }
     }
 
-    private static void writeFileIsoLines(Map<Double, List<LineSegment>> segments, String filePath, int width, int height){
+    private static void writeFileFromSegments(Map<Double, List<LineSegment>> segments, String filePath, int width, int height){
         try {
 
             double thickness = ((double) width)/200;
@@ -120,6 +128,84 @@ public class SVGConverter {
                             .append(",").append(Rounder.round(lS.p2y - lS.p1y)*scale)
                             .append("\" stroke=\"").append(color)
                             .append("\" stroke-width=\"").append(thickness*scale).append("\" /> \n");
+                }
+            }
+
+            stringBuilder.append("</svg>");
+
+            String file = stringBuilder.toString();
+
+            FileWriter myWriter = new FileWriter(filePath, false);
+            myWriter.write(file);
+            myWriter.close();
+
+
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+    private static void writeFileFromPathNodes(Map<Double, List<PathNode>> linePaths, String filePath, int width, int height){
+        try {
+
+            double thickness = ((double) width)/200;
+            double scale = 1; //can be used to scale the output map
+
+            StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")
+                    .append("version=\"1.1\" x=\"1\" y=\"1\" ")
+                    .append("width=\"").append(width*scale)
+                    .append("\" height=\"").append(height*scale)
+                    .append("\"> \n");
+
+            /*
+            The whole thing is pretty ineffective: It starts with a height array, from wich it generates an unsorted Map,
+            from wich it gets an unsorted Set of heights, which is converted to an array, then sorted.
+            I can't be bothered to change that thought.
+             */
+            Set<Double> h = linePaths.keySet();
+            Double[] heights = new Double[h.size()];
+            h.toArray(heights);
+            Arrays.sort(heights);
+
+            int i = 0;
+            for(Double d: heights) { // iterate through each line height
+                String color = lineColors(linePaths.size(), i);
+                i++;
+                for (PathNode path : linePaths.get(d)) { //iterate trough each path
+                    Stack<PathNode> missed = new Stack<>();
+                    missed.push(path);
+                    stringBuilder.append("<path d=\"");
+                    while(!missed.empty()) { //iterate trough each branch
+                        PathNode currentElement = missed.pop();
+                        stringBuilder
+                                .append("M ")
+                                .append(Rounder.round(currentElement.getX() * scale))
+                                .append(",")
+                                .append(Rounder.round(currentElement.getY() * scale))
+                                .append(" ");
+
+                        while (currentElement.getFollowing().size()>0) { //iterate trough each element
+                            PathNode nextNode = currentElement.getFollowing().iterator().next();
+                            if(currentElement.getFollowing().size()>1) {
+                                Set<PathNode> newFollowing = currentElement.getFollowing();
+                                newFollowing.remove(nextNode);
+                                currentElement.setFollowing(newFollowing);
+                                missed.push(currentElement);
+                            }
+                            currentElement = nextNode;
+                            stringBuilder
+                                    .append("L ")
+                                    .append(Rounder.round(currentElement.getX() * scale))
+                                    .append(",")
+                                    .append(Rounder.round(currentElement.getY() * scale))
+                                    .append(" ");
+                        }
+                    }
+                    stringBuilder
+                            .append("\" stroke=\"").append(color)
+                            .append("\" stroke-width=\"").append(thickness * scale).append("\" fill=\"none\" /> \n");
                 }
             }
 
