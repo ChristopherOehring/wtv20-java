@@ -41,18 +41,13 @@ public class Isolinien {
         */
      }
 
+//Via LineSegments
+
     public static void printIso(String file, String spaltentrenner, int amount) throws Exception{
         double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
 
         Map<Double, List<LineSegment>> segments = getIsolinesForArray(d, amount);
         SVGConverter.SVGCreateIsoFromSegments(segments, file, d.length-1, d[0].length -1);
-    }
-
-    public static void printIsoByPath(String file, String spaltentrenner, int amount) throws Exception {
-        double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
-
-        Map<Double, List<PathNode>> paths = getIsolinePaths(d, amount);
-        SVGConverter.SVGCreateIsoFromPathNodes(paths, file, d.length-1, d[0].length -1);
     }
 
     public static Map<Double, List<LineSegment>> getIsolinesForArray(double[][] values, int amount){
@@ -68,7 +63,16 @@ public class Isolinien {
         return result;
     }
 
-    public static Map<Double, List<PathNode>> getIsolinePaths(double[][] values, int amount){
+//Via PathNodes
+
+    public static void printIsoByPath(String file, String spaltentrenner, int amount) throws Exception {
+        double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
+
+        Map<Double, List<PathNode>> paths = getPathsOfAllIsolines(d, amount);
+        SVGConverter.SVGCreateIsoFromPathNodes(paths, file, d.length-1, d[0].length -1);
+    }
+
+    public static Map<Double, List<PathNode>> getPathsOfAllIsolines(double[][] values, int amount){
         double min = min(values);
         double max = max(values);
         double[] heights = lineHeights(amount, min, max);
@@ -77,13 +81,13 @@ public class Isolinien {
         Map<Double, List<PathNode>> linePaths = new HashMap<>();
 
         for(double h: heights){
-            linePaths.put(h, getIsolinePath(triangles, h));
+            linePaths.put(h, getPathOfIsoline(triangles, h));
         }
 
         return linePaths;
     }
 
-    public static List<PathNode> getIsolinePath(List<Triangle> triangles, Double lineHeight){
+    public static List<PathNode> getPathOfIsoline(List<Triangle> triangles, Double lineHeight){
         List<PathNode> result = new ArrayList<>();
         List<LineSegment> segments = getIsoLine(triangles, lineHeight);
 
@@ -93,14 +97,13 @@ public class Isolinien {
             current = segments.get(0);
             node = new PathNode(current.p1x, current.p1y);
             result.add(node);
-            segments = getIsolinePath(node, segments);
+            segments = getPathOfIsolineRecursive(node, segments);
         }
 
         return result;
     }
 
-
-    private static List<LineSegment> getIsolinePath(PathNode node, List<LineSegment> segments){
+    private static List<LineSegment> getPathOfIsolineRecursive(PathNode node, List<LineSegment> segments){
         Set<PathNode> following;
 
         Set<LineSegment> nextSegments = segments.stream()
@@ -122,10 +125,12 @@ public class Isolinien {
         node.setFollowing(following);
 
         for(PathNode n: following){
-            segments = getIsolinePath(n, segments);
+            segments = getPathOfIsolineRecursive(n, segments);
         }
         return segments;
     }
+
+//General Use
 
     public static double max(double[][] values) throws NoSuchElementException{
         //noinspection OptionalGetWithoutIsPresent
