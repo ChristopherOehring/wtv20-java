@@ -1,25 +1,14 @@
-package com.company;
-import java.io.*;
+package com.company.converter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class CSVReader
 {
 
-    public static void main(String[] args) throws IOException // Eingabe: Filepath, Spaltentrenner(ohne space)
+    public static void main(String[] args) // Eingabe: Filepath, Spaltentrenner(ohne space)
     {
-	    // write your code here
-        // dateiLesen("/home/chris/IdeaProjects/WTV/src/com/company/test1");
-        double[][] d;
-        try{
-            if(args.length == 2)    d = dateiLesenDyn(args[0], args[1]);
-            else                    d = dateiLesenDyn(args[0], ",");
-        } catch (FileNotFoundException | IndexOutOfBoundsException e) {
-            System.out.println("Reverting to Test File");
-            d = dateiLesenDyn("test.csv", ",");
-        }
+
     }
 
     /*public static void dateiLesen(String name) throws IOException

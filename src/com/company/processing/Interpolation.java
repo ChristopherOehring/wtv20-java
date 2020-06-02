@@ -1,4 +1,4 @@
-package com.company;
+package com.company.processing;
 
 public class Interpolation {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.structures;
 
 public class LineSegment {
     public double p1x;

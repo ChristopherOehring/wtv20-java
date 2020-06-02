@@ -1,9 +1,9 @@
-package com.company;
+package com.company.structures;
 
 public class Point {
-    double x;
-    double y;
-    double z;
+    public double x;
+    public double y;
+    public double z;
 
     public Point(double x, double y, double z) {
         this.x = x;

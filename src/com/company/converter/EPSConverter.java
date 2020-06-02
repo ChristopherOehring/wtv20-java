@@ -1,4 +1,6 @@
-package com.company;
+package com.company.converter;
+
+import com.company.structures.LineSegment;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -35,6 +37,7 @@ public class EPSConverter {
             int x = 0;
 
             //Files überschreiben:
+            //noinspection ResultOfMethodCallIgnored
             file.createNewFile();
 
 
@@ -45,6 +48,7 @@ public class EPSConverter {
         return newFilePath;
     }
 
+    // TODO: 5/26/20 Introduce stringBuilder
     private static void writeFile(LineSegment[] s, String filePath){
         double minX = Double.MAX_VALUE;
         double maxX = Double.MIN_VALUE;

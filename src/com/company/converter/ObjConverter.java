@@ -1,8 +1,11 @@
-package com.company;
+package com.company.converter;
+
+import com.company.structures.Triangle;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 public class ObjConverter {
     public static void main(String[] args) {
@@ -10,7 +13,7 @@ public class ObjConverter {
         try {
             d = CSVReader.dateiLesenDyn(args[0], ",");
             System.out.println("Eingelesen");
-            objCreate(d, args[0]);
+            objCreateSingle(d, args[0]);
         } catch(IOException e){
             System.out.println("Error: Invalid input file");
             e.printStackTrace();
@@ -18,10 +21,14 @@ public class ObjConverter {
 
     }
 
-    public static void objCreate(double[][] d, String filePath) {
+    public static void objCreateSingle(double[][] d, String filePath) {
         String newFilePath = createFile(filePath);
-        writeFile(d, newFilePath);
+        writeFileSingle(d, newFilePath);
+    }
 
+    public static void objCreateTriangles(List<Triangle> triangles, String filePath){
+        String newFilePath = createFile(filePath);
+        writeFileTriangle(triangles, newFilePath);
     }
 
     private static String createFile(String filePath){
@@ -32,6 +39,7 @@ public class ObjConverter {
             File file = new File(newFilePath);
 
             //Files überschreiben:
+            //noinspection ResultOfMethodCallIgnored
             file.createNewFile();
 
            /* Files nicht Überschreiben:
@@ -51,7 +59,32 @@ public class ObjConverter {
         return newFilePath;
     }
 
-    private static void writeFile(double[][] d, String filePath){
+    private static void writeFileTriangle(List<Triangle> triangles, String filePath){
+        try {
+            StringBuilder builder = new StringBuilder();
+            builder.append("o ").append(filePath).append("\n");
+
+            int i = 1;
+            for (Triangle t: triangles) {
+                builder.append(String.format("v %1$s %2$s %3$s\n", t.a.x, t.a.y, t.a.z))
+                        .append(String.format("v %1$s %2$s %3$s\n", t.b.x, t.b.y, t.b.z))
+                        .append(String.format("v %1$s %2$s %3$s\n", t.c.x, t.c.y, t.c.z))
+                        .append(String.format("f %1$s %2$s %3$s\n", i, (i+1), (i+2)));
+                i = i+3;
+            }
+
+
+            FileWriter myWriter = new FileWriter(filePath, false);
+            myWriter.write(builder.toString());
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+    private static void writeFileSingle(double[][] d, String filePath){
         try {
             FileWriter myWriter = new FileWriter(filePath, false);
             double midpoint = d[0][0] + d[0][1] +d[1][0] + d[1][1];
