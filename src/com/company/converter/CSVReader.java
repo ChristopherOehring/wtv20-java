@@ -2,6 +2,7 @@ package com.company.converter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class CSVReader
 {
@@ -45,20 +46,28 @@ public class CSVReader
         // Matrix größe bestimmen
         int a = 0;
         int b = Integer.MAX_VALUE;
+        int i = 1;
         boolean mErr = false;
         while ((zeileStr = br.readLine()) != null)
         {
             zeileStr = zeileStr.replaceAll("\\s","");
-            a++;
             String[] s = zeileStr.split(spaltentrenner);
+            if (s[0].equals("")) continue;
+            a++;
             if(s.length < b){
                 b = s.length;
-                mErr = true;
+                if(a != 1) {
+                    mErr = true;
+                    System.out.println("line " + i + " too short");
+                    System.out.println(b + " " + Arrays.toString(s));
+
+                }
             }
             if(s.length > b){
                 mErr = true;
+                System.out.println("line " + i + " too long");
             }
-            if(a == 1) mErr = false;
+            i++;
         }
         if (mErr) System.out.println("Error: Matrix is incorrect and will be trimmed");
 
@@ -69,17 +78,22 @@ public class CSVReader
         br = new BufferedReader(fr);
 
         // Daten einlesen
-        int i = 0;
+        i = 0;
         while ((zeileStr = br.readLine()) != null)
         {
+            //System.out.println(i);
+
             zeileStr = zeileStr.replaceAll("\\s","");
             String[] zeileStrArr = zeileStr.split(spaltentrenner);
+            if (zeileStrArr[0].equals("")) continue;
             for (int x = 0; x < b; x++) {
                  try{
+                     //System.out.println("  " + x );
+
                      list[i][x] = Double.parseDouble(zeileStrArr[x]);
                  } catch (Exception e){
                      e.printStackTrace();
-                     System.out.println("Möglicherweise ein falscher Spaltentrenner (Default = \",\"");
+                     System.out.println("Möglicherweise ein falscher Spaltentrenner (Default = \",\")");
                  }
             }
             i++;

@@ -7,8 +7,20 @@ import java.math.RoundingMode;
 
 public class Rounder {
 
-    public static final int decimalPlaces = 8;
+    public static final int decimalPlaces = 10;
 
+    /**
+     * Use this method to circumvent any issues resulting from incapability with scientific notation of doubles
+     * @param value the value to be printed
+     * @return a string, containing said value as a plain decimal number
+     */
+    public static String roundToString(double value) {
+        if (decimalPlaces < 0) throw new IllegalArgumentException();
+
+        BigDecimal bd = BigDecimal.valueOf(value);
+        bd = bd.setScale(decimalPlaces, RoundingMode.HALF_UP);
+        return bd.toPlainString();
+    }
 
     public static double round(double value) {
         if (decimalPlaces < 0) throw new IllegalArgumentException();

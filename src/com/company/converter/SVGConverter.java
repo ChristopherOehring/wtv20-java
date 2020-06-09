@@ -9,6 +9,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+import static com.company.processing.Rounder.round;
+import static com.company.processing.Rounder.roundToString;
+
 public class SVGConverter {
     public static void main(String[] args) throws Exception{
         SVGCreate(args[0]);
@@ -123,9 +126,9 @@ public class SVGConverter {
                 for (LineSegment lS : segments.get(d)) {
                     stringBuilder
                             .append("<path d=\"M ")
-                            .append(Rounder.round(lS.p1x)*scale).append(",").append(Rounder.round(lS.p1y)*scale)
-                            .append(" l ").append(Rounder.round(lS.p2x - lS.p1x)*scale)
-                            .append(",").append(Rounder.round(lS.p2y - lS.p1y)*scale)
+                            .append(round(lS.p1x)*scale).append(",").append(round(lS.p1y)*scale)
+                            .append(" l ").append(round(lS.p2x - lS.p1x)*scale)
+                            .append(",").append(round(lS.p2y - lS.p1y)*scale)
                             .append("\" stroke=\"").append(color)
                             .append("\" stroke-width=\"").append(thickness*scale).append("\" /> \n");
                 }
@@ -150,9 +153,9 @@ public class SVGConverter {
     private static void writeFileFromPathNodes(Map<Double, List<PathNode>> linePaths, String filePath, int width, int height){
         try {
 
-            double thickness = ((double) width)/200;
             double scale = 1; //can be used to scale the output map
 
+            double thickness = ((((double) width) /1000) *scale) /(linePaths.size());
             StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")
                     .append("version=\"1.1\" x=\"1\" y=\"1\" ")
                     .append("width=\"").append(width*scale)
@@ -181,9 +184,9 @@ public class SVGConverter {
                         PathNode currentElement = missed.pop();
                         stringBuilder
                                 .append("M ")
-                                .append(Rounder.round(currentElement.getX() * scale))
+                                .append(roundToString(currentElement.getX() * scale))
                                 .append(",")
-                                .append(Rounder.round(currentElement.getY() * scale))
+                                .append(roundToString(currentElement.getY() * scale))
                                 .append(" ");
 
                         while (currentElement.getFollowing().size()>0) { //iterate trough each element
@@ -197,15 +200,15 @@ public class SVGConverter {
                             currentElement = nextNode;
                             stringBuilder
                                     .append("L ")
-                                    .append(Rounder.round(currentElement.getX() * scale))
+                                    .append(roundToString(currentElement.getX() * scale))
                                     .append(",")
-                                    .append(Rounder.round(currentElement.getY() * scale))
+                                    .append(roundToString(currentElement.getY() * scale))
                                     .append(" ");
                         }
                     }
                     stringBuilder
                             .append("\" stroke=\"").append(color)
-                            .append("\" stroke-width=\"").append(thickness * scale).append("\" fill=\"none\" /> \n");
+                            .append("\" stroke-width=\"").append(roundToString(thickness)).append("\" fill=\"none\" /> \n");
                 }
             }
 
@@ -258,6 +261,8 @@ public class SVGConverter {
     }
 
     private static String lineColors(int anz, int pos){
+        anz++;
+        pos++;
         String res = "rgb(";
         int max = 510;
         int intervall = max/anz;

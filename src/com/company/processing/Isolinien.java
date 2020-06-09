@@ -19,7 +19,8 @@ public class Isolinien {
         System.out.println(intersectionOfTriangle(t, 1));
          */
 
-        int anzLines = 10;
+        int anzLines = 15;
+        int scale = 1;
         List<String> x = new ArrayList<>();
 
         x.add("map01_res3.csv");
@@ -27,11 +28,13 @@ public class Isolinien {
         x.add("map03.csv");
         x.add("saddle_res50.csv");
         x.add("tilt_D_res50.csv");
+        x.add("srtm_de_il.csv");
+        x.add("test.csv");
 
         for(String s : x){
             s = "examples/" + s;
             printIsoByPath(s,",", anzLines);
-            ObjConverter.objCreateTriangles(triangles(CSVReader.dateiLesenDyn(s, ",")), s);
+            ObjConverter.objCreateTriangles(triangles(scale(CSVReader.dateiLesenDyn(s, ","), scale)), s);
         }
         /*
         String file = "examples/map01_res3.csv";
@@ -258,6 +261,7 @@ public class Isolinien {
         if(a != null) {
             points.add(a);
         }
+        points = new ArrayList<>(new HashSet<>(points));
         if(points.size() == 2 &&
                 (points.get(0).x != points.get(1).x ||
                         points.get(0).y != points.get(1).y)){
