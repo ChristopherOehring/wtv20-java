@@ -14,7 +14,7 @@ public class EPSConverter {
     }
 
     public static void EPSCreate(String fileName) throws Exception{
-        double [][] d = CSVReader.dateiLesenDyn(fileName, ",");
+        double [][] d = CSVReader.dateiLesen2D(fileName, ",");
         LineSegment[] segments = new LineSegment[3];
         for(int i = 0; i < 3; i++){
             segments[i] = new LineSegment(d[i][0],d[i][1],d[i][2],d[i][3]);

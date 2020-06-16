@@ -34,7 +34,7 @@ public class Isolinien {
         for(String s : x){
             s = "examples/" + s;
             printIsoByPath(s,",", anzLines);
-            ObjConverter.objCreateTriangles(triangles(scale(CSVReader.dateiLesenDyn(s, ","), scale)), s);
+            ObjConverter.objCreateTriangles(triangles(scale(CSVReader.dateiLesen2D(s, ","), scale)), s);
         }
         /*
         String file = "examples/map01_res3.csv";
@@ -47,7 +47,7 @@ public class Isolinien {
 //Via LineSegments
 
     public static void printIso(String file, String spaltentrenner, int amount) throws Exception{
-        double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
+        double[][] d = CSVReader.dateiLesen2D(file, spaltentrenner);
 
         Map<Double, List<LineSegment>> segments = getIsolinesForArray(d, amount);
         SVGConverter.SVGCreateIsoFromSegments(segments, file, d.length-1, d[0].length -1);
@@ -69,7 +69,7 @@ public class Isolinien {
 //Via PathNodes
 
     public static void printIsoByPath(String file, String spaltentrenner, int amount) throws Exception {
-        double[][] d = CSVReader.dateiLesenDyn(file, spaltentrenner);
+        double[][] d = CSVReader.dateiLesen2D(file, spaltentrenner);
 
         Map<Double, List<PathNode>> paths = getPathsOfAllIsolines(d, amount);
         SVGConverter.SVGCreateIsoFromPathNodes(paths, file, d.length-1, d[0].length -1);

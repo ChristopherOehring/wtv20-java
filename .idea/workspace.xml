@@ -26,30 +26,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
+      <change afterPath="$PROJECT_DIR$/src/com/company/converter/ColorGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/hill_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/hill_res50.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/hill_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/hill_res50.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/map01_res3.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/map01_res3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/map03.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/map03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/saddle_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/saddle_res50.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/saddle_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/saddle_res50.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/test.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/test.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/tilt_D_res50.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tilt_D_res50.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/tilt_D_res50.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tilt_D_res50.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/EPSConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/EPSConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/converter/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/SVGConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/processing/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/Isolinien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/processing/Rounder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/Rounder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/structures/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/structures/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,7 +83,7 @@
       <recent name="C:\Users\Chris\IdeaProjects\wtv20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Isolinien">
+  <component name="RunManager" selected="Application.CSVReader">
     <configuration name="CSVReader" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.converter.CSVReader" />
       <module name="WTV" />
@@ -166,10 +157,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CSVReader" />
         <item itemvalue="Application.Isolinien" />
         <item itemvalue="Application.test (1)" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.CSVReader" />
         <item itemvalue="Application.EPSConverter" />
       </list>
     </recent_temporary>
@@ -203,7 +194,10 @@
       <workItem from="1591534341224" duration="19000" />
       <workItem from="1591534368173" duration="27000" />
       <workItem from="1591570218459" duration="205000" />
-      <workItem from="1591708807897" duration="7459000" />
+      <workItem from="1591708807897" duration="8345000" />
+      <workItem from="1592269521416" duration="568000" />
+      <workItem from="1592312300110" duration="174000" />
+      <workItem from="1592312489803" duration="7832000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -289,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591103507929</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="some fixes of issues with linecolor, uneven line numbers resulting in gaps in the lines and linethickness">
+      <created>1591716490490</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591716490490</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +329,8 @@
     <MESSAGE value="updated some results" />
     <MESSAGE value="Changing package structure" />
     <MESSAGE value="a little cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="a little cleaning" />
+    <MESSAGE value="some fixes of issues with linecolor, uneven line numbers resulting in gaps in the lines and linethickness" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixes of issues with linecolor, uneven line numbers resulting in gaps in the lines and linethickness" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
@@ -377,45 +379,45 @@
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="491" y="276" key="GitRewordDialog/0.27.1366.711@0.27.1366.711" timestamp="1590278259868" />
-    <state width="1876" height="348" key="GridCell.Tab.0.bottom" timestamp="1591715855023">
+    <state width="1876" height="416" key="GridCell.Tab.0.bottom" timestamp="1592325432661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855023" />
+    <state width="1876" height="416" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325432661" />
     <state width="1316" height="146" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="348" key="GridCell.Tab.0.center" timestamp="1591715855023">
+    <state width="1876" height="416" key="GridCell.Tab.0.center" timestamp="1592325432661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855023" />
+    <state width="1876" height="416" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325432661" />
     <state width="1316" height="146" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="348" key="GridCell.Tab.0.left" timestamp="1591715855023">
+    <state width="1876" height="416" key="GridCell.Tab.0.left" timestamp="1592325432661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855023" />
+    <state width="1876" height="416" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325432661" />
     <state width="1316" height="146" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1591036724689" />
-    <state width="1876" height="348" key="GridCell.Tab.0.right" timestamp="1591715855023">
+    <state width="1876" height="416" key="GridCell.Tab.0.right" timestamp="1592325432661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855023" />
+    <state width="1876" height="416" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325432661" />
     <state width="1316" height="146" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1591715855024">
+    <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1592325117525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855024" />
+    <state width="1876" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325117525" />
     <state width="1316" height="225" key="GridCell.Tab.1.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
-    <state width="1876" height="348" key="GridCell.Tab.1.center" timestamp="1591715855023">
+    <state width="1876" height="348" key="GridCell.Tab.1.center" timestamp="1592325117524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855023" />
+    <state width="1876" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325117524" />
     <state width="1316" height="225" key="GridCell.Tab.1.center/0.27.1366.711@0.27.1366.711" timestamp="1591036331940" />
-    <state width="1876" height="348" key="GridCell.Tab.1.left" timestamp="1591715855023">
+    <state width="1876" height="348" key="GridCell.Tab.1.left" timestamp="1592325117524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855023" />
+    <state width="1876" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325117524" />
     <state width="1316" height="225" key="GridCell.Tab.1.left/0.27.1366.711@0.27.1366.711" timestamp="1591036331940" />
-    <state width="1876" height="348" key="GridCell.Tab.1.right" timestamp="1591715855023">
+    <state width="1876" height="348" key="GridCell.Tab.1.right" timestamp="1592325117524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591715855023" />
+    <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592325117524" />
     <state width="1316" height="225" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
     <state x="753" y="222" key="RollbackChangesDialog" timestamp="1591103520580">
       <screen x="0" y="0" width="1920" height="1040" />

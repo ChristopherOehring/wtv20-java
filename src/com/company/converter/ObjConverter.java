@@ -11,7 +11,7 @@ public class ObjConverter {
     public static void main(String[] args) {
         double[][] d;
         try {
-            d = CSVReader.dateiLesenDyn(args[0], ",");
+            d = CSVReader.dateiLesen2D(args[0], ",");
             System.out.println("Eingelesen");
             objCreateSingle(d, args[0]);
         } catch(IOException e){

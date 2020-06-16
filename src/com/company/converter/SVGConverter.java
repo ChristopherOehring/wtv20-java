@@ -1,7 +1,6 @@
 package com.company.converter;
 
 import com.company.structures.LineSegment;
-import com.company.processing.Rounder;
 import com.company.structures.PathNode;
 
 import java.io.File;
@@ -18,7 +17,7 @@ public class SVGConverter {
     }
 
     public static void SVGCreate(String fileName) throws Exception{
-        double [][] d = CSVReader.dateiLesenDyn(fileName, ",");
+        double [][] d = CSVReader.dateiLesen2D(fileName, ",");
         List<LineSegment> segments = new ArrayList<>();
         for(int i = 0; i < 3; i++){
             segments.add(new LineSegment(d[i][0],d[i][1],d[i][2],d[i][3]));
@@ -121,7 +120,7 @@ public class SVGConverter {
 
             int i = 0;
             for(Double d: heights) {
-                String color = lineColors(segments.size(), i);
+                String color = ColorGenerator.arrayToColorString(ColorGenerator.lineColor(segments.size(), i));
                 i++;
                 for (LineSegment lS : segments.get(d)) {
                     stringBuilder
@@ -174,7 +173,7 @@ public class SVGConverter {
 
             int i = 0;
             for(Double d: heights) { // iterate through each line height
-                String color = lineColors(linePaths.size(), i);
+                String color = ColorGenerator.arrayToColorString(ColorGenerator.lineColor(linePaths.size(), i));
                 i++;
                 for (PathNode path : linePaths.get(d)) { //iterate trough each path
                     Stack<PathNode> missed = new Stack<>();
@@ -260,22 +259,4 @@ public class SVGConverter {
         }
     }
 
-    private static String lineColors(int anz, int pos){
-        anz++;
-        pos++;
-        String res = "rgb(";
-        int max = 510;
-        int intervall = max/anz;
-        int x = pos*intervall;
-        if(x < 255){
-            res += "255,";
-            res += x;
-        } else {
-            x = -x + 510;
-            res += x;
-            res += ",255";
-        }
-        res += ",0)";
-        return res;
-    }
 }
