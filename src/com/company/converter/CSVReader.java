@@ -11,27 +11,6 @@ import java.util.stream.Collectors;
 public class CSVReader
 {
 
-    public static void main(String[] args) // Eingabe: Filepath, Spaltentrenner(ohne space)
-    {
-        try {
-            double[][][] result = dateiLesen3D("examples/sphere01.csv");
-            int lenght = result.length;
-            for (int a = 0; a < lenght; a++){
-                System.out.println("");
-                for (int b = 0; b < lenght; b++){
-                    System.out.println("");
-                    for (int c = 0; c < lenght; c++)
-                    {
-                        System.out.print(result[a][b][c] + ", \t");
-                    }
-                }
-            }
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-
-    }
-
     /*public static void dateiLesen(String name) throws IOException
     {
         FileReader fr = new FileReader(name);
@@ -123,7 +102,6 @@ public class CSVReader
     }
 
 
-    //TODO: this assumes the area of input data is a cube maybe this needs to be fixed
     public static double[][][] dateiLesen3D(String name) throws IOException
     {
 
@@ -131,15 +109,14 @@ public class CSVReader
 
         /*
          * einlesen der datei in "file".
-         * Dabei werden automatisch alle Leerzeilen entfernt.
+         * Dabei werden automatisch alle Leerzeilen und whitespaces entfernt
          * erlaubt außerdem kommentare mit #
          */
         FileReader fr = new FileReader(name);
         BufferedReader br = new BufferedReader(fr);
-        String zeileStr = null;
-        zeileStr = br.readLine();
+        String zeileStr = br.readLine();
         while (zeileStr != null) {
-            zeileStr = zeileStr.replaceAll("\t", "").trim();
+            zeileStr = zeileStr.replaceAll("\\s+", "").trim();
             if(!zeileStr.equals("") && !(zeileStr.charAt(0) == '#')) {
                 fileList.add(zeileStr);
             }
@@ -147,19 +124,20 @@ public class CSVReader
         }
         br.close();
         Iterator<String> file = fileList.iterator();
+        //TODO alles hiervor ist nicht sinnvoll
 
         double[][][] result; // result[x][y][z]
         int i = 0;
-        int lenght;
+        int dataRowsPerSlice;
         //find the number of rows
-        zeileStr = file.next().trim().replaceAll(" +", " ");
-        String[] lineArray = zeileStr.split(" ");
-        if(lineArray[0].equals("dataRowsPerSlice") && lineArray.length == 2) {
+        zeileStr = file.next();
+        if(zeileStr.contains("dataRowsPerSlice")) {
+            zeileStr = zeileStr.replaceFirst("dataRowsPerSlice", "");
             try {
-                lenght = Integer.parseInt(lineArray[1]);
+                dataRowsPerSlice = Integer.parseInt(zeileStr);
             } catch (NumberFormatException e){
                 e.printStackTrace();
-                System.out.println("Error: expected number of rows but found: \"" + lineArray[1] + "\"");
+                System.out.println("Error: expected number of rows but found: \"" + zeileStr + "\"");
                 return null;
             }
         } else {
@@ -168,24 +146,17 @@ public class CSVReader
         }
 
         //write the array
-        result = new double[lenght][lenght][lenght];
-        String line = "";
-        for(int z = 0; z < lenght; z++){
-            for(int y = 0; y < lenght; y++) {
-                line = file.next();
-                String[] numbersAsString = line.split(", +");
-
-                double[] numbers;
-
-                try{
-                    numbers = Arrays.stream(numbersAsString)
-                            .mapToDouble(s -> Double.parseDouble(s))
-                            .toArray();
-                } catch (NumberFormatException e) {
-                    System.out.println("Error: at line: " + line);
-                    return null;
+        int xLength = fileList.get(1).split(",").length;
+        int yLength = dataRowsPerSlice;
+        int zLength = (fileList.size()-1)/dataRowsPerSlice;
+        result = new double[xLength][yLength][zLength]; //error for dataRowsPerSlice=0
+        for(int z = 0; z < zLength; z++){
+            for(int y = 0; y < yLength; y++) {
+                String line = file.next();
+                String[] numbersAsString = line.split(",");
+                for(int x = 0; x < yLength; x++) {
+                    result[x][dataRowsPerSlice-1-y][z] = Double.parseDouble(numbersAsString[x]);
                 }
-                result[y][z] = numbers;
             }
         }
         return result;
