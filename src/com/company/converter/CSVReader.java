@@ -101,7 +101,12 @@ public class CSVReader
         return list;
     }
 
-
+    /**
+     * Uebung 7 1a
+     * @param name Name of the input file
+     * @return returns a 3d double array d[x][y][z] containing the numbers from the input file
+     * @throws IOException if the file cannot be opened
+     */
     public static double[][][] dateiLesen3D(String name) throws IOException
     {
 

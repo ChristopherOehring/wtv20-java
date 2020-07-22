@@ -25,7 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results" />
+    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/sphere01.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/sphere01.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/processing/IsoSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/IsoSurface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/structures/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/structures/Point.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +201,8 @@
       <workItem from="1592912210468" duration="5981000" />
       <workItem from="1592936451000" duration="19000" />
       <workItem from="1594561685173" duration="599000" />
-      <workItem from="1594636743624" duration="5326000" />
+      <workItem from="1594636743624" duration="14426000" />
+      <workItem from="1594719534231" duration="15008000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -300,7 +309,35 @@
       <option name="project" value="LOCAL" />
       <updated>1594644307891</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="We are now properly reading 3d csv files">
+      <created>1594644582494</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1594644582494</updated>
+    </task>
+    <task id="LOCAL-00017" summary="We are now properly reading 3d csv files">
+      <created>1594644748302</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594644748302</updated>
+    </task>
+    <task id="LOCAL-00018" summary="We are now properly reading 3d csv files">
+      <created>1594644757393</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594644757393</updated>
+    </task>
+    <task id="LOCAL-00019" summary="adding some more examples">
+      <created>1594726391571</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1594726391571</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +379,8 @@
     <MESSAGE value="some fixes of issues with linecolor, uneven line numbers resulting in gaps in the lines and linethickness" />
     <MESSAGE value="added 3d file reader" />
     <MESSAGE value="We are now properly reading 3d csv files" />
-    <option name="LAST_COMMIT_MESSAGE" value="We are now properly reading 3d csv files" />
+    <MESSAGE value="adding some more examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding some more examples" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
@@ -358,10 +396,10 @@
     </state>
     <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299969749" />
     <state x="142" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.711@0.27.1366.711" timestamp="1588075198113" />
-    <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588088613833">
+    <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594726111380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588088613833" />
+    <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594726111380" />
     <state x="446" y="178" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.711@0.27.1366.711" timestamp="1587474551041" />
     <state x="526" y="54" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1588081961178">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -372,6 +410,10 @@
     </state>
     <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299718935" />
     <state x="518" y="113" key="#com.intellij.ide.util.MemberChooser/0.27.1366.711@0.27.1366.711" timestamp="1590501996401" />
+    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594649922338">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594649922338" />
     <state x="741" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591103150271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -381,35 +423,39 @@
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="417" y="121" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1366.711@0.27.1366.711" timestamp="1591027027655" />
-    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1592936467782">
+    <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1594742167067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592936467782" />
+    <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167067" />
+    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1594727207000">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594727207000" />
     <state x="2575" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589713065592" />
     <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1590581946433" />
     <state x="491" y="276" key="GitRewordDialog" timestamp="1590278259868">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="491" y="276" key="GitRewordDialog/0.27.1366.711@0.27.1366.711" timestamp="1590278259868" />
-    <state width="1876" height="377" key="GridCell.Tab.0.bottom" timestamp="1594643762594">
+    <state width="1876" height="199" key="GridCell.Tab.0.bottom" timestamp="1594742167087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594643762594" />
+    <state width="1876" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
     <state width="1316" height="146" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="377" key="GridCell.Tab.0.center" timestamp="1594643762594">
+    <state width="1876" height="199" key="GridCell.Tab.0.center" timestamp="1594742167087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594643762594" />
+    <state width="1876" height="199" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
     <state width="1316" height="146" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="377" key="GridCell.Tab.0.left" timestamp="1594643762594">
+    <state width="1876" height="199" key="GridCell.Tab.0.left" timestamp="1594742167087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594643762594" />
+    <state width="1876" height="199" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
     <state width="1316" height="146" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1591036724689" />
-    <state width="1876" height="377" key="GridCell.Tab.0.right" timestamp="1594643762594">
+    <state width="1876" height="199" key="GridCell.Tab.0.right" timestamp="1594742167087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594643762594" />
+    <state width="1876" height="199" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
     <state width="1316" height="146" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
     <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1592351013648">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -431,10 +477,10 @@
     </state>
     <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592351013648" />
     <state width="1316" height="225" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
-    <state x="753" y="222" key="RollbackChangesDialog" timestamp="1591103520580">
+    <state x="753" y="222" key="RollbackChangesDialog" timestamp="1594726264010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591103520580" />
+    <state x="753" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594726264010" />
     <state x="275" y="275" key="SettingsEditor" timestamp="1589299544992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -474,5 +520,21 @@
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589298175458" />
     <state x="443" y="181" width="672" height="464" key="search.everywhere.popup/0.27.1366.711@0.27.1366.711" timestamp="1590197005334" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/converter/ObjConverter.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/converter/ObjConverter.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

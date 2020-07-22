@@ -6,11 +6,19 @@ public class Point {
     public double x;
     public double y;
     public double z;
+    public double value;
 
     public Point(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
+    }
+
+    public Point(double x, double y, double z, double value) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.value = value;
     }
 
     @Override
