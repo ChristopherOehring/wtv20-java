@@ -1,10 +1,13 @@
-package com.company.converter;
+package com.wtv.converter;
 
-import com.company.structures.LineSegment;
+import com.wtv.structures.LineSegment;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class EPSConverter {
@@ -25,7 +28,7 @@ public class EPSConverter {
         }
 
         String s = createFile(fileName);
-        writeFile(segments, s);
+        writeFile(Arrays.asList(segments), s);
     }
 
     private static String createFile(String filePath){
@@ -49,7 +52,7 @@ public class EPSConverter {
     }
 
     // TODO: 5/26/20 Introduce stringBuilder
-    private static void writeFile(LineSegment[] s, String filePath){
+    private static void writeFile(List<LineSegment> s, String filePath){
         double minX = Double.MAX_VALUE;
         double maxX = Double.MIN_VALUE;
         double minY = Double.MAX_VALUE;

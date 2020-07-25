@@ -1,10 +1,10 @@
-package com.company.converter;
+package com.wtv.converter;
 
 public class ColorGenerator {
 
     public static String arrayToColorString(int[] x){
         assert x.length == 3;
-        return String.format("rgb(%s,%s,%s)",x);
+        return String.format("rgb(%s,%s,%s)",x[0],x[1],x[2]);
     }
 
     public static int[] lineColor(int anz, int pos){
@@ -22,7 +22,7 @@ public class ColorGenerator {
             res[0] = x;
             res[1] = 255;
         }
-        res[3] = 0;
+        res[2] = 0;
         return res;
     }
 

@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="7" y="7" width="300" height="300"> 
-<polygon 
- points="0.0,0.0 200.0,0.0 50.0,71.0" stroke="black"
- stroke-width="3"
- fill="none" />
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="1" y="1" width="202.0" height="202.0"> 
+<path d="M 0.0,0.0 l 200.0,0.0" stroke="rgb(255,255,0)" stroke-width="1.01" /> 
+<path d="M 200.0,0.0 l -150.0,71.0" stroke="rgb(255,255,0)" stroke-width="1.01" /> 
+<path d="M 50.0,71.0 l -50.0,-71.0" stroke="rgb(255,255,0)" stroke-width="1.01" /> 
 </svg>

@@ -1,4 +1,4 @@
-package com.company.structures;
+package com.wtv.structures;
 
 import java.util.Objects;
 

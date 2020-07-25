@@ -1,8 +1,8 @@
-package com.company.processing;
+package com.wtv.processing;
 
-import com.company.converter.CSVReader;
-import com.company.converter.ObjConverter;
-import com.company.structures.Point;
+import com.wtv.converter.CSVReader;
+import com.wtv.converter.ObjConverter;
+import com.wtv.structures.Point;
 
 import java.io.IOException;
 import java.util.*;

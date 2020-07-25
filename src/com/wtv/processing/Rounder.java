@@ -1,6 +1,6 @@
-package com.company.processing;
+package com.wtv.processing;
 
-import com.company.structures.LineSegment;
+import com.wtv.structures.LineSegment;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

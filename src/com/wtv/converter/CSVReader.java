@@ -1,4 +1,6 @@
-package com.company.converter;
+package com.wtv.converter;
+import com.wtv.structures.LineSegment;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,10 +8,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class CSVReader
 {
+
+    public static void main(String[] args) {
+        try {
+            System.out.println(Arrays.deepToString(dateiLesen2D(args[0], ",")));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 
     /*public static void dateiLesen(String name) throws IOException
     {
@@ -35,14 +45,24 @@ public class CSVReader
 
     }*/
 
-    public static double[][] dateiLesen2D(String name, String spaltentrenner) throws IOException
-    {
+    /**
+     * Uebung 1 2a<br>
+     * This Method reads the contents of a .csv file
+     *
+     * @param name The name of the file to be read
+     * @param spaltentrenner The symbol used to seperate values(/columns). Usually ","
+     * @return the values from the file in a 2d double array
+     * @throws IOException if the file could not be found or opened
+     */
+    public static double[][] dateiLesen2D(String name, String spaltentrenner) throws IOException {
         FileReader fr = new FileReader(name);
         BufferedReader br = new BufferedReader(fr);
 
         String zeileStr;
 
-        // Matrix größe bestimmen
+        /*
+            Matrix größe bestimmen
+         */
         int a = 0;
         int b = Integer.MAX_VALUE;
         int i = 1;
@@ -72,11 +92,17 @@ public class CSVReader
 
         double[][] list = new double[a][b]; //list[i][j]
 
-        // Filereader neustarten
+        /*
+            Filereader neustarten
+         */
+
         fr = new FileReader(name);
         br = new BufferedReader(fr);
 
-        // Daten einlesen
+        /*
+            Daten einlesen
+         */
+
         i = 0;
         while ((zeileStr = br.readLine()) != null)
         {
@@ -107,8 +133,7 @@ public class CSVReader
      * @return returns a 3d double array d[x][y][z] containing the numbers from the input file
      * @throws IOException if the file cannot be opened
      */
-    public static double[][][] dateiLesen3D(String name) throws IOException
-    {
+    public static double[][][] dateiLesen3D(String name) throws IOException {
 
         List<String> fileList = new ArrayList<>();
 
@@ -134,7 +159,11 @@ public class CSVReader
         double[][][] result; // result[x][y][z]
         int i = 0;
         int dataRowsPerSlice;
-        //find the number of rows
+
+        /*
+            find the number of rows
+         */
+
         zeileStr = file.next();
         if(zeileStr.contains("dataRowsPerSlice")) {
             zeileStr = zeileStr.replaceFirst("dataRowsPerSlice", "");
@@ -191,4 +220,12 @@ public class CSVReader
                 }
         }
     }*/
+    public static List<LineSegment> arrayToSegments(double[][] array){
+        if(array[0].length != 4) throw new IllegalArgumentException();
+        List<LineSegment> result = new ArrayList<>();
+        for(double[] a : array) {
+            result.add(new LineSegment(a[0], a[1], a[2], a[3]));
+        }
+        return result;
+    }
 }

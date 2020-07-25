@@ -1,4 +1,4 @@
-package com.company.structures;
+package com.wtv.structures;
 
 public class Triangle {
     public Point a;

@@ -1,9 +1,9 @@
-package com.company.processing;
+package com.wtv.processing;
 
-import com.company.converter.CSVReader;
-import com.company.converter.ObjConverter;
-import com.company.converter.SVGConverter;
-import com.company.structures.*;
+import com.wtv.converter.CSVReader;
+import com.wtv.converter.ObjConverter;
+import com.wtv.converter.SVGConverter;
+import com.wtv.structures.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -230,10 +230,8 @@ public class Isolinien {
         return result;
     }
 
-    public static Pair<Map<String, LineSegment>, Map<String, LineSegment>> getIsoLineMaps(
-            List<Triangle> triangles,
-            double lineHeight) {
-
+    public static Pair<Map<String, LineSegment>, Map<String, LineSegment>> getIsoLineMaps(List<Triangle> triangles,
+                                                                                          double lineHeight) {
         Map<String, LineSegment> pointMap1 = new HashMap<>();
         Map<String, LineSegment> pointMap2 = new HashMap<>();
 

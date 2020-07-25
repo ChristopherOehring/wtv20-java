@@ -1,15 +1,15 @@
-package com.company.converter;
+package com.wtv.converter;
 
-import com.company.structures.LineSegment;
-import com.company.structures.PathNode;
+import com.wtv.processing.Rounder;
+import com.wtv.structures.PathNode;
+import com.wtv.structures.LineSegment;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
-import static com.company.processing.Rounder.round;
-import static com.company.processing.Rounder.roundToString;
+import static com.wtv.processing.Rounder.round;
 
 public class SVGConverter {
     public static void main(String[] args) throws Exception{
@@ -96,7 +96,8 @@ public class SVGConverter {
         }
     }
 
-    private static void writeFileFromSegments(Map<Double, List<LineSegment>> segments, String filePath, int width, int height){
+    private static void writeFileFromSegments(Map<Double, List<LineSegment>> segments,
+                                              String filePath, int width, int height){
         try {
 
             double thickness = ((double) width)/200;
@@ -149,7 +150,8 @@ public class SVGConverter {
         }
     }
 
-    private static void writeFileFromPathNodes(Map<Double, List<PathNode>> linePaths, String filePath, int width, int height){
+    private static void writeFileFromPathNodes(Map<Double, List<PathNode>> linePaths,
+                                               String filePath, int width, int height){
         try {
 
             double scale = 1; //can be used to scale the output map
@@ -183,9 +185,9 @@ public class SVGConverter {
                         PathNode currentElement = missed.pop();
                         stringBuilder
                                 .append("M ")
-                                .append(roundToString(currentElement.getX() * scale))
+                                .append(Rounder.roundToString(currentElement.getX() * scale))
                                 .append(",")
-                                .append(roundToString(currentElement.getY() * scale))
+                                .append(Rounder.roundToString(currentElement.getY() * scale))
                                 .append(" ");
 
                         while (currentElement.getFollowing().size()>0) { //iterate trough each element
@@ -199,15 +201,15 @@ public class SVGConverter {
                             currentElement = nextNode;
                             stringBuilder
                                     .append("L ")
-                                    .append(roundToString(currentElement.getX() * scale))
+                                    .append(Rounder.roundToString(currentElement.getX() * scale))
                                     .append(",")
-                                    .append(roundToString(currentElement.getY() * scale))
+                                    .append(Rounder.roundToString(currentElement.getY() * scale))
                                     .append(" ");
                         }
                     }
                     stringBuilder
                             .append("\" stroke=\"").append(color)
-                            .append("\" stroke-width=\"").append(roundToString(thickness)).append("\" fill=\"none\" /> \n");
+                            .append("\" stroke-width=\"").append(Rounder.roundToString(thickness)).append("\" fill=\"none\" /> \n");
                 }
             }
 
@@ -227,7 +229,8 @@ public class SVGConverter {
         }
     }
 
-    private static void writeFileLines2(List<LineSegment> segments, String filePath, int width, int height){
+    private static void writeFileLines2(List<LineSegment> segments,
+                                        String filePath, int width, int height){
         try {
 
             StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")

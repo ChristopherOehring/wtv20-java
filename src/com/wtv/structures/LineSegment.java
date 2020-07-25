@@ -1,4 +1,4 @@
-package com.company.structures;
+package com.wtv.structures;
 
 public class LineSegment {
     public double p1x;

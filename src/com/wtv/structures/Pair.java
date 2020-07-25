@@ -1,4 +1,4 @@
-package com.company.structures;
+package com.wtv.structures;
 
 public final class Pair<U, V> {
     private U first;

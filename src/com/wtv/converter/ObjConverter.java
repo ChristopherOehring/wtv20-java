@@ -1,8 +1,8 @@
-package com.company.converter;
+package com.wtv.converter;
 
-import com.company.processing.Rounder;
-import com.company.structures.Point;
-import com.company.structures.Triangle;
+import com.wtv.processing.Rounder;
+import com.wtv.structures.Point;
+import com.wtv.structures.Triangle;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,23 +12,6 @@ import java.util.List;
 import java.util.Set;
 
 public class ObjConverter {
-    public static void main(String[] args) {
-        double[][] d;
-        try {
-            d = CSVReader.dateiLesen2D(args[0], ",");
-            System.out.println("Eingelesen");
-            objCreateSingle(d, args[0]);
-        } catch (IOException e) {
-            System.out.println("Error: Invalid input file");
-            e.printStackTrace();
-        }
-
-    }
-
-    public static void objCreateSingle(double[][] d, String filePath) {
-        String newFilePath = createFileRawInput(filePath);
-        writeFileSingle(d, newFilePath);
-    }
 
     public static void objCreateTriangles(List<Triangle> triangles, String filePath) {
         String newFilePath = createFileRawInput(filePath);
@@ -59,8 +42,6 @@ public class ObjConverter {
         String newFilePath = createFileRawInput(filePath);
         writeFileCubes(points, newFilePath);
     }
-
-
 
     /**
      * This method determines the name for and creates an output file. It will use the name of the input file,
@@ -154,30 +135,6 @@ public class ObjConverter {
 
             FileWriter myWriter = new FileWriter(filePath, false);
             myWriter.write(builder.toString());
-            myWriter.close();
-            System.out.println("Successfully wrote to the file.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
-
-    private static void writeFileSingle(double[][] d, String filePath) {
-        try {
-            FileWriter myWriter = new FileWriter(filePath, false);
-            double midpoint = d[0][0] + d[0][1] + d[1][0] + d[1][1];
-            midpoint = midpoint / 4;
-            myWriter.write("o " + filePath + "\n" +
-                    "v 1 0 " + d[0][0] + "\n" +
-                    "v 1 1 " + d[0][1] + "\n" +
-                    "v 0 0 " + d[1][0] + "\n" +
-                    "v 0 1 " + d[1][1] + "\n" +
-                    "v 0.5 0.5 " + midpoint + "\n" +
-                    "f 1 2 5 \n" +
-                    "f 1 3 5 \n" +
-                    "f 3 4 5 \n" +
-                    "f 2 4 5 \n"
-            );
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
@@ -287,4 +244,36 @@ public class ObjConverter {
             e.printStackTrace();
         }
     }
+
+    /*
+
+    public static void objCreateSingle(double[][] d, String filePath) {
+        String newFilePath = createFileRawInput(filePath);
+        writeFileSingle(d, newFilePath);
+    }
+
+    private static void writeFileSingle(double[][] d, String filePath) {
+        try {
+            FileWriter myWriter = new FileWriter(filePath, false);
+            double midpoint = d[0][0] + d[0][1] + d[1][0] + d[1][1];
+            midpoint = midpoint / 4;
+            myWriter.write("o " + filePath + "\n" +
+                    "v 1 0 " + d[0][0] + "\n" +
+                    "v 1 1 " + d[0][1] + "\n" +
+                    "v 0 0 " + d[1][0] + "\n" +
+                    "v 0 1 " + d[1][1] + "\n" +
+                    "v 0.5 0.5 " + midpoint + "\n" +
+                    "f 1 2 5 \n" +
+                    "f 1 3 5 \n" +
+                    "f 3 4 5 \n" +
+                    "f 2 4 5 \n"
+            );
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+    */
 }

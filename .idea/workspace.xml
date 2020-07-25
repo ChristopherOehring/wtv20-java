@@ -26,13 +26,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung01/Aufgabe2a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung01/Aufgabe2b.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung02/Aufgabe1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung02/Aufgabe2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/sphere01.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/sphere01.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/processing/IsoSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/processing/IsoSurface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/structures/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/structures/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/U2A2a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/U2A2a.eps" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/U2A2a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/test.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/ColorGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/ColorGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/EPSConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/EPSConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/ObjConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/converter/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/processing/Interpolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Interpolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/processing/IsoSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/IsoSurface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/processing/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/processing/Rounder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Rounder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/structures/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/structures/LineSegment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/structures/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/structures/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/structures/PathNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/structures/PathNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/structures/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/structures/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/structures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/structures/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,23 +101,13 @@
       <recent name="C:\Users\Chris\IdeaProjects\wtv20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IsoSurface">
-    <configuration name="CSVReader" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.converter.CSVReader" />
-      <module name="WTV" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;map01_res3.csv&quot;" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IsoSurface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.processing.IsoSurface" />
+  <component name="RunManager" selected="Application.Aufgabe2">
+    <configuration name="Aufgabe1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung02.Aufgabe1" />
       <module name="WTV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.processing.*" />
+          <option name="PATTERN" value="com.demo.Uebung02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,13 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Isolinien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.processing.Isolinien" />
+    <configuration name="Aufgabe2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung02.Aufgabe2" />
       <module name="WTV" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;map01_res3.csv&quot;" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.converter.*" />
+          <option name="PATTERN" value="com.demo.Uebung02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.test" />
+    <configuration name="Aufgabe2a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung01.Aufgabe2a" />
       <module name="WTV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.demo.Uebung01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +141,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.U2A2.test" />
+    <configuration name="Aufgabe2b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung01.Aufgabe2b" />
       <module name="WTV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.U2A2.*" />
+          <option name="PATTERN" value="com.demo.Uebung01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObjConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wtv.converter.ObjConverter" />
+      <module name="WTV" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;/examples/map03.csv&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wtv.converter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,19 +169,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CSVReader" />
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.Isolinien" />
-      <item itemvalue="Application.test (1)" />
-      <item itemvalue="Application.IsoSurface" />
+      <item itemvalue="Application.ObjConverter" />
+      <item itemvalue="Application.Aufgabe2a" />
+      <item itemvalue="Application.Aufgabe2b" />
+      <item itemvalue="Application.Aufgabe1" />
+      <item itemvalue="Application.Aufgabe2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IsoSurface" />
-        <item itemvalue="Application.CSVReader" />
-        <item itemvalue="Application.Isolinien" />
-        <item itemvalue="Application.test (1)" />
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Aufgabe2" />
+        <item itemvalue="Application.Aufgabe1" />
+        <item itemvalue="Application.Aufgabe2b" />
+        <item itemvalue="Application.Aufgabe2a" />
+        <item itemvalue="Application.ObjConverter" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +224,8 @@
       <workItem from="1594561685173" duration="599000" />
       <workItem from="1594636743624" duration="14426000" />
       <workItem from="1594719534231" duration="15008000" />
+      <workItem from="1595454526553" duration="802000" />
+      <workItem from="1595705108652" duration="13664000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -337,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594726391571</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="some documentation and small fixes">
+      <created>1595455630694</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1595455630694</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +410,8 @@
     <MESSAGE value="added 3d file reader" />
     <MESSAGE value="We are now properly reading 3d csv files" />
     <MESSAGE value="adding some more examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding some more examples" />
+    <MESSAGE value="some documentation and small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some documentation and small fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
@@ -391,10 +422,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591474552018" />
-    <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589299969749">
+    <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595713542551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589299969749" />
+    <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595713542551" />
     <state x="142" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.711@0.27.1366.711" timestamp="1588075198113" />
     <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594726111380">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -423,10 +454,10 @@
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="417" y="121" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1366.711@0.27.1366.711" timestamp="1591027027655" />
-    <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1594742167067">
+    <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1595706259554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167067" />
+    <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595706259554" />
     <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1594727207000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -437,25 +468,25 @@
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="491" y="276" key="GitRewordDialog/0.27.1366.711@0.27.1366.711" timestamp="1590278259868" />
-    <state width="1876" height="199" key="GridCell.Tab.0.bottom" timestamp="1594742167087">
+    <state width="1876" height="402" key="GridCell.Tab.0.bottom" timestamp="1595718318594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
+    <state width="1876" height="402" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595718318594" />
     <state width="1316" height="146" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="199" key="GridCell.Tab.0.center" timestamp="1594742167087">
+    <state width="1876" height="402" key="GridCell.Tab.0.center" timestamp="1595718318594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
+    <state width="1876" height="402" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595718318594" />
     <state width="1316" height="146" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="199" key="GridCell.Tab.0.left" timestamp="1594742167087">
+    <state width="1876" height="402" key="GridCell.Tab.0.left" timestamp="1595718318594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
+    <state width="1876" height="402" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595718318594" />
     <state width="1316" height="146" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1591036724689" />
-    <state width="1876" height="199" key="GridCell.Tab.0.right" timestamp="1594742167087">
+    <state width="1876" height="402" key="GridCell.Tab.0.right" timestamp="1595718318594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594742167087" />
+    <state width="1876" height="402" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595718318594" />
     <state width="1316" height="146" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
     <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1592351013648">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -477,10 +508,10 @@
     </state>
     <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592351013648" />
     <state width="1316" height="225" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
-    <state x="753" y="222" key="RollbackChangesDialog" timestamp="1594726264010">
+    <state x="753" y="222" key="RollbackChangesDialog" timestamp="1595717593049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594726264010" />
+    <state x="753" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595717593049" />
     <state x="275" y="275" key="SettingsEditor" timestamp="1589299544992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -525,12 +556,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/converter/ObjConverter.java</url>
-          <line>165</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/converter/ObjConverter.java</url>
+          <url>file://$PROJECT_DIR$/src/com/wtv/converter/ObjConverter.java</url>
           <line>195</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>

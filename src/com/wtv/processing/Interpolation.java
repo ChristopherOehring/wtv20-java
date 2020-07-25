@@ -1,4 +1,4 @@
-package com.company.processing;
+package com.wtv.processing;
 
 public class Interpolation {
     public static void main(String[] args) {
@@ -6,6 +6,7 @@ public class Interpolation {
     }
 
     public static void compare(double v0, double v1, double x){
+        System.out.println(String.format("Input: %s, %s, %s", v0, v1, x));
         System.out.println("Continue: " + linInterpolContinue(v0,v1,x));
         System.out.println("FixInterval: " + linInterpolFixInterval(v0,v1,x));
         System.out.println("DefZero: " + linInterpolDefZero(v0,v1,x));
