@@ -1,5 +1,9 @@
 package com.wtv.converter;
 
+import com.wtv.processing.Interpolation;
+
+import java.util.Vector;
+
 public class ColorGenerator {
 
     public static String arrayToColorString(int[] x){
@@ -22,12 +26,17 @@ public class ColorGenerator {
             res[0] = x;
             res[1] = 255;
         }
-        res[2] = 0;
         return res;
     }
 
-    public static String interpolateColor(int r, int g, int b, double t){
-        assert 0 <= t && t <= 1;
-        return null;
+    public static int[] interpolateColor(int[] a, int[]b, double t){
+        if(a.length != b.length) throw new IllegalArgumentException("The array lenghts are unequal!");
+        if(0 < t || t < 1) throw new IllegalArgumentException("0 <= t <= 1 is required");
+        int[] result = new int[a.length];
+        for(int i = 0; i < a.length; i++){
+            result[i] = (int) Interpolation.linInterpolErr(a[i], b[i], t);
+        }
+
+        return result;
     }
 }

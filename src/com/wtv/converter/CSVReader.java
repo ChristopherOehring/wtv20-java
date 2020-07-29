@@ -228,4 +228,15 @@ public class CSVReader
         }
         return result;
     }
+
+    public static double[][] invertForSvg(double[][] array){
+        if (array == null || array.length == 0) return array;
+        double[][] result = new double[array[0].length][array.length];
+        for(int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                result[j][i] = array[i][j];
+            }
+        }
+        return result;
+    }
 }

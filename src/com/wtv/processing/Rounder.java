@@ -7,7 +7,9 @@ import java.math.RoundingMode;
 
 public class Rounder {
 
-    public static final int decimalPlaces = 10;
+    public static final int decimalPlaces = 14;
+    public static final int decimalPlacesString = 2;
+
 
     /**
      * Use this method to circumvent any issues resulting from incapability with scientific notation of doubles
@@ -15,18 +17,22 @@ public class Rounder {
      * @return a string, containing said value as a plain decimal number
      */
     public static String roundToString(double value) {
-        if (decimalPlaces < 0) throw new IllegalArgumentException();
+        if (decimalPlacesString < 0) throw new IllegalArgumentException();
 
         BigDecimal bd = BigDecimal.valueOf(value);
-        bd = bd.setScale(decimalPlaces, RoundingMode.HALF_UP);
+        bd = bd.setScale(decimalPlacesString, RoundingMode.UP);
         return bd.toPlainString();
     }
 
     public static double round(double value) {
+        return round(value, decimalPlaces);
+    }
+
+    public static double round(double value, int decimalPlaces) {
         if (decimalPlaces < 0) throw new IllegalArgumentException();
 
         BigDecimal bd = BigDecimal.valueOf(value);
-        bd = bd.setScale(decimalPlaces, RoundingMode.HALF_UP);
+        bd = bd.setScale(decimalPlaces, RoundingMode.UP);
         return bd.doubleValue();
     }
 
@@ -40,6 +46,11 @@ public class Rounder {
     }
 
     public static LineSegment round(LineSegment s){
+        return round(s, decimalPlaces);
+    }
+
+    public static LineSegment round(LineSegment s, int decimalPlaces){
+        if (s==null) return null;
         s.p1x = round(s.p1x);
         s.p1y = round(s.p1y);
         s.p2x = round(s.p2x);

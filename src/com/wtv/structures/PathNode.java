@@ -2,6 +2,10 @@ package com.wtv.structures;
 
 import java.util.Set;
 
+/**
+ * This was used for the original path implementation, but it created all sorts of issues.
+ * Interestingly the recursive Methods never where an issue.
+ */
 public class PathNode {
     final double x;
     final double y;

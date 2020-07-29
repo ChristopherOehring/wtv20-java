@@ -1,8 +1,10 @@
 package com.wtv.converter;
 
 import com.wtv.processing.Rounder;
+import com.wtv.structures.Knoten;
 import com.wtv.structures.PathNode;
 import com.wtv.structures.LineSegment;
+import com.wtv.structures.Spot;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,6 +14,8 @@ import java.util.*;
 import static com.wtv.processing.Rounder.round;
 
 public class SVGConverter {
+    public static double thickness = 0.05;
+
     public static void main(String[] args) throws Exception{
         SVGCreate(args[0]);
     }
@@ -41,6 +45,12 @@ public class SVGConverter {
                                                  String filePath, int width, int height) {
         String s = createFile(filePath);
         writeFileFromPathNodes(linePaths, s, width, height);
+    }
+
+    public static void SVGCreateIsoFromPath(Map<Double, List<Knoten>> linePaths,
+                                                 String filePath, int width, int height) {
+        String s = createFile(filePath);
+        writeFileFromPath(linePaths, s, width, height);
     }
 
     private static String createFile(String filePath){
@@ -99,8 +109,6 @@ public class SVGConverter {
     private static void writeFileFromSegments(Map<Double, List<LineSegment>> segments,
                                               String filePath, int width, int height){
         try {
-
-            double thickness = ((double) width)/200;
             double scale = 1; //can be used to scale the output map
 
             StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")
@@ -156,7 +164,6 @@ public class SVGConverter {
 
             double scale = 1; //can be used to scale the output map
 
-            double thickness = ((((double) width) /1000) *scale) /(linePaths.size());
             StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")
                     .append("version=\"1.1\" x=\"1\" y=\"1\" ")
                     .append("width=\"").append(width*scale)
@@ -174,13 +181,16 @@ public class SVGConverter {
             Arrays.sort(heights);
 
             int i = 0;
+            int p = 0;
             for(Double d: heights) { // iterate through each line height
                 String color = ColorGenerator.arrayToColorString(ColorGenerator.lineColor(linePaths.size(), i));
                 i++;
+                stringBuilder.append("<path d=\"");
+                p++;
+                System.out.println("Path nr. " + p);
                 for (PathNode path : linePaths.get(d)) { //iterate trough each path
                     Stack<PathNode> missed = new Stack<>();
                     missed.push(path);
-                    stringBuilder.append("<path d=\"");
                     while(!missed.empty()) { //iterate trough each branch
                         PathNode currentElement = missed.pop();
                         stringBuilder
@@ -189,7 +199,6 @@ public class SVGConverter {
                                 .append(",")
                                 .append(Rounder.roundToString(currentElement.getY() * scale))
                                 .append(" ");
-
                         while (currentElement.getFollowing().size()>0) { //iterate trough each element
                             PathNode nextNode = currentElement.getFollowing().iterator().next();
                             if(currentElement.getFollowing().size()>1) {
@@ -207,10 +216,89 @@ public class SVGConverter {
                                     .append(" ");
                         }
                     }
+                }
+                stringBuilder
+                        .append("\" stroke=\"").append(color)
+                        .append("\" stroke-width=\"").append(Rounder.roundToString(thickness)).append("\" fill=\"none\" /> \n");
+            }
+
+            stringBuilder.append("</svg>");
+
+            String file = stringBuilder.toString();
+
+            FileWriter myWriter = new FileWriter(filePath, false);
+            myWriter.write(file);
+            myWriter.close();
+
+
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+    // there are ideas to enable changing the thickness but 0.5 is actually pretty much fine
+    private static void writeFileFromPath(Map<Double, List<Knoten>> isoLines,
+                                          String filePath, int width, int height){
+        writeFileFromPath(isoLines, filePath, width, height, thickness);
+    }
+
+    private static void writeFileFromPath(Map<Double, List<Knoten>> isoLines,
+                                               String filePath, int width, int height, double thickness){
+        try {
+
+            double scale = 1; //can be used to scale the output map
+
+            StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")
+                    .append("version=\"1.1\" x=\"1\" y=\"1\" ")
+                    .append("width=\"").append(width*scale)
+                    .append("\" height=\"").append(height*scale)
+                    .append("\"> \n");
+
+            Set<Double> h = isoLines.keySet();
+            Double[] heights = new Double[h.size()];
+            h.toArray(heights);
+            Arrays.sort(heights);
+
+            int i = 0;
+            int p = 0;
+            for(Double d: heights) { // iterate through each line height
+                String color = ColorGenerator.arrayToColorString(ColorGenerator.lineColor(isoLines.size(), i));
+                i++;
+
+                //set of all paths
+                Set<LinkedList<Spot>> paths = new HashSet<>();
+                for (Knoten k : isoLines.get(d)) {
+                    paths.addAll(k.getPaths());
+                }
+
+
+                for (LinkedList<Spot> spots: paths) {
+                    stringBuilder.append("\t<path d=\"");
+                    p++;
+                    System.out.println("Path nr. " + p);
+                    Spot currentElement = spots.pop();
+                    stringBuilder
+                            .append("M ")
+                            .append(Rounder.roundToString(currentElement.getX() * scale))
+                            .append(",")
+                            .append(Rounder.roundToString(currentElement.getY() * scale))
+                            .append(" ");
+                    while (!spots.isEmpty()) {
+                        currentElement = spots.pop();
+                        stringBuilder
+                                .append("L ")
+                                .append(Rounder.roundToString(currentElement.getX() * scale))
+                                .append(",")
+                                .append(Rounder.roundToString(currentElement.getY() * scale))
+                                .append(" ");
+                    }
                     stringBuilder
                             .append("\" stroke=\"").append(color)
                             .append("\" stroke-width=\"").append(Rounder.roundToString(thickness)).append("\" fill=\"none\" /> \n");
                 }
+
             }
 
             stringBuilder.append("</svg>");
