@@ -127,8 +127,19 @@ Die Farben wurden direkt in den CSVReader integriert und sind nicht Optional
 ##### `A)`
 **Implementiert**
 
-In der Methode `getPathOfIsoline` der Klasse [Isolinien](src/com/wtv/processing/Isolinien.java)
+In der Klasse [Isolinien](src/com/wtv/processing/Isolinien.java).
+
+Mein erster Versuch war eine baumartige Struktur mit nur einer [PathNode](src/com/wtv/structures/PathNode.java) Klasse. Diese Methoden sind immernoch im Bereich `//Via Pathnodes` zu finden.
+Dies hat allerdings zu einigen Problemen geführt und ich habe mich letztendes dafür entschieden das ganze nochmal anders zu machen.  
+
+Die neue Version befindet sich darunter im Bereich `//Via Path in "Ordered Lists"`
 
 ##### `B)`
+**Teilweise Implementiert**
+
+Die eigenen Testbeispiele sind nichtmehr vorhanden.
+
+##### `C)`
+**
 
 [//]: # (TODO: do stuff)

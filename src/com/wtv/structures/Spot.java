@@ -11,6 +11,11 @@ public class Spot {
         this.y = y;
     }
 
+    public Spot(Spot s) {
+        this.x = s.getX();
+        this.y = s.getY();
+    }
+
     public double getX() {
         return x;
     }
