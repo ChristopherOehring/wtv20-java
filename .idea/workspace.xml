@@ -26,31 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
-      <change afterPath="$PROJECT_DIR$/.idea/wtv20-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/pathTest1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/sphere01(1).obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/sphere01(2).obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/sphere01(3).obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/sphere01(4).obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/test.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/DemoRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung05/Aufgabe2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung07/Aufgabe1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung4/Aufgabe1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung01/Aufgabe2a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung01/Aufgabe2a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung01/Aufgabe2b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung01/Aufgabe2b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung02/Aufgabe1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung02/Aufgabe2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung03/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung03/Aufgabe1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung05/Aufgabe2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung07/Aufgabe1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung4/Aufgabe1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/U2A2a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/demo/DemoRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/DemoRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Interpolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Interpolation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -425,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597502724339</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Runnable demos">
+      <created>1597512245587</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1597512245587</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,25 +519,25 @@
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="491" y="276" key="GitRewordDialog/0.27.1366.711@0.27.1366.711" timestamp="1590278259868" />
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1596655528950">
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1597515108808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
     <state width="1316" height="146" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1596655528950">
+    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1597515108808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
     <state width="1316" height="146" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1596655528950">
+    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1597515108808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
     <state width="1316" height="146" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1591036724689" />
-    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1596655528950">
+    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1597515108808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
     <state width="1316" height="146" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
     <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1596365930449">
       <screen x="0" y="0" width="1920" height="1040" />

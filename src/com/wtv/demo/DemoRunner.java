@@ -7,10 +7,12 @@ import com.wtv.demo.Uebung02.Aufgabe2;
 import com.wtv.structures.Pair;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class DemoRunner {
+    public static Scanner scanner = new Scanner(System.in); // necessary because closing a scanner closes its input source...
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         HashMap<String, Demo> demos = new HashMap<>();
         demos.put("1:2a", new Aufgabe2a());
@@ -22,24 +24,42 @@ public class DemoRunner {
         demos.put("5:2", new com.wtv.demo.Uebung05.Aufgabe2());
         demos.put("7:1", new com.wtv.demo.Uebung07.Aufgabe1());
 
-        System.out.println("Available Demos:");
+        outer: while(true) {
+            System.out.println("Available Demos:");
 
-        for(String s: demos.keySet()) {
-            System.out.println("\t" + s);
+            for (String s : demos.keySet().stream().sorted().collect(Collectors.toList())) {
+                System.out.println("\t" + s);
+            }
+            String line;
+            while (true) {
+                System.out.print("Please choose one of the demos: ");
+                line = scanner.nextLine()
+                        .replaceAll("\\s+", "");
+                if (demos.containsKey(line)) break;
+
+                System.err.println("Invalid demo. Please try again.");
+            }
+
+            demos.get(line).demo();
+
+            System.out.println("\n -- end of demo -- \n");
+            while(true) {
+                System.out.print("Do you want to run another demo?(J/n): ");
+                line = scanner.nextLine()
+                        .toLowerCase()
+                        .replaceAll("\\s+", "");
+                switch (line) {
+                    case "no":
+                    case "n":
+                        break outer;
+
+                    case "jes":
+                    case "j":
+                    case "":
+                        continue outer;
+                }
+            }
         }
-        String line;
-        while (true) {
-            System.out.print("Please choose one of the demos: ");
-            line = scanner.nextLine();
-            line = line.replaceAll("\\s+","");
-
-            if(demos.containsKey(line)) break;
-
-            System.out.println("Invalid demo. Please try again.");
-        }
-
-        demos.get(line).demo();
-        scanner.close();
     }
 
     /**
@@ -49,7 +69,6 @@ public class DemoRunner {
      * @return a {@link Pair} of filename and line seperator
      */
     public static Pair<String, String> getInputCsv(String filename, String seperator){
-        Scanner scanner = new Scanner(System.in);
         String line;
         Pair<String, String> ret;
 
@@ -66,16 +85,19 @@ public class DemoRunner {
         }
 
         ret = new Pair<>(filename, seperator);
-        scanner.close();
         return ret;
     }
 
     public static int getInputLineNumber(int number) {
-        Scanner scanner = new Scanner(System.in);
+        String line;
         while(true) {
             System.out.print("Number of Iso Lines (default = " + number + "): ");
             try {
-                return Integer.parseInt(scanner.nextLine().replaceAll("\\s+", ""));
+                line = scanner.nextLine()
+                        .replaceAll("\\s+", "");
+                if(line.equals("")) return number;
+                number = Integer.parseInt(line);
+                return number;
             } catch (NumberFormatException e) {
                 System.out.println();
                 e.printStackTrace();

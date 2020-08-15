@@ -1,5 +1,7 @@
 package com.wtv.processing;
 
+import java.util.concurrent.TimeUnit;
+
 public class Interpolation {
     public static void main(String[] args) {
         compare(2,3, 2);
@@ -15,6 +17,12 @@ public class Interpolation {
         } catch (IllegalArgumentException e){
             System.out.println("Err: ");
             e.printStackTrace();
+
+            try {
+                TimeUnit.MILLISECONDS.sleep(500);
+            } catch (InterruptedException interruptedException) {
+                interruptedException.printStackTrace();
+            }
         }
     }
 

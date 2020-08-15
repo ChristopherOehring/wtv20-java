@@ -14,13 +14,6 @@ public class Isolinien {
     public static Rounder rounder = new Rounder();
 
     public static void main(String[] args) throws Exception {
-        /*
-        Point a = new Point(0,0,0);
-        Point b = new Point(1,0,1);
-        Point c = new Point(0.5,0.5,1);
-        Triangle t = new Triangle(a,b,c);
-        System.out.println(intersectionOfTriangle(t, 1));
-         */
 
         int anzLines = 15;
         int scale = 1;
@@ -167,11 +160,9 @@ public class Isolinien {
                 newPath.add(new Spot(currSegment.p1x, currSegment.p1y));
                 newPath.addLast(new Spot(currSegment.p2x, currSegment.p2y));
                 segments.remove(currSegment);
-                System.out.println("Initialized with: " + currSegment);
                 // build path backwards
                 while (true) {
                     Spot currSpot = new Spot(newPath.getFirst().getX(), newPath.getFirst().getY());
-                    System.out.println("b: " + currSpot);
                     // If there is a knot here, thats the end of our path.
 
                     LineSegment s = subroutine(knots, currSpot, newPath, segments);
@@ -202,7 +193,6 @@ public class Isolinien {
         // If there is a knot here, thats the end of our path.
         Knoten localKnot = knots.stream().filter(knoten -> knoten.getSpot().equals(currSpot)).findFirst().orElse(null);
         if(localKnot != null) {
-            System.out.println("Found Knot!");
             localKnot.add(newPath);
             return null;
         }
@@ -268,9 +258,7 @@ public class Isolinien {
         The (x,y) is always the top left corner of the square
          */
         for(int x = 0; x < values.length - 1; x++){         //iterate through y coordinates
-//            System.out.println(x+ ", " + values.length);
             for (int y = 0; y < values[x].length - 1; y++){ //iterate through x coordinates
-//                System.out.println(":" + y + ", " + values[x].length);
                 double midPoint = middlePoint(values,x,y);
 
                 triangles.add(

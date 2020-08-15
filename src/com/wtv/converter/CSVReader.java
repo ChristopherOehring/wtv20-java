@@ -77,18 +77,18 @@ public class CSVReader
                 b = s.length;
                 if(a != 1) {
                     mErr = true;
-                    System.out.println("line " + i + " too short");
-                    System.out.println(b + " " + Arrays.toString(s));
+                    System.err.println("line " + i + " too short");
+                    System.err.println(b + " " + Arrays.toString(s));
 
                 }
             }
             if(s.length > b){
                 mErr = true;
-                System.out.println("line " + i + " too long");
+                System.err.println("line " + i + " too long");
             }
             i++;
         }
-        if (mErr) System.out.println("Error: Matrix is incorrect and will be trimmed");
+        if (mErr) System.err.println("Error: Matrix is incorrect and will be trimmed");
 
         double[][] list = new double[a][b]; //list[i][j]
 
@@ -104,21 +104,18 @@ public class CSVReader
          */
 
         i = 0;
-        while ((zeileStr = br.readLine()) != null)
-        {
-            //System.out.println(i);
+        while ((zeileStr = br.readLine()) != null) {
 
             zeileStr = zeileStr.replaceAll("\\s","");
             String[] zeileStrArr = zeileStr.split(spaltentrenner);
             if (zeileStrArr[0].equals("")) continue;
             for (int x = 0; x < b; x++) {
                  try{
-                     //System.out.println("  " + x );
 
                      list[i][x] = Double.parseDouble(zeileStrArr[x]);
                  } catch (Exception e){
                      e.printStackTrace();
-                     System.out.println("Möglicherweise ein falscher Spaltentrenner (Default = \",\")");
+                     System.err.println("Möglicherweise ein falscher Spaltentrenner (Default = \",\")");
                  }
             }
             i++;

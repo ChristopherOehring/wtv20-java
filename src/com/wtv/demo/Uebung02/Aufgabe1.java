@@ -1,6 +1,7 @@
 package com.wtv.demo.Uebung02;
 
 import com.wtv.demo.Demo;
+import com.wtv.demo.DemoRunner;
 import com.wtv.processing.Interpolation;
 import com.wtv.structures.Pair;
 
@@ -9,7 +10,7 @@ import java.util.Scanner;
 public class Aufgabe1 implements Demo {
 
     public void demo(){
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = DemoRunner.scanner;
         String line;
         Pair<String, String> ret;
         double v0;

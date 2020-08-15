@@ -53,10 +53,6 @@ public class SVGConverter {
         for(int i = 0; i < 3; i++){
             segments.add(new LineSegment(d[i][0],d[i][1],d[i][2],d[i][3]));
         }
-        for (LineSegment l:
-                segments) {
-            System.out.println(l);
-        }
 
         String s = createFile(fileName);
         writeFileTriangle(segments, s);
@@ -105,7 +101,7 @@ public class SVGConverter {
             */
 
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.err.println("An error occurred.");
             e.printStackTrace();
         }
         return newFilePath;
@@ -128,7 +124,7 @@ public class SVGConverter {
 
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.err.println("An error occurred.");
             e.printStackTrace();
         }
     }
@@ -180,7 +176,7 @@ public class SVGConverter {
 
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.err.println("An error occurred.");
             e.printStackTrace();
         }
     }
@@ -214,7 +210,6 @@ public class SVGConverter {
                 i++;
                 stringBuilder.append("<path d=\"");
                 p++;
-                System.out.println("Path nr. " + p);
                 for (PathNode path : linePaths.get(d)) { //iterate trough each path
                     Stack<PathNode> missed = new Stack<>();
                     missed.push(path);
@@ -260,7 +255,7 @@ public class SVGConverter {
 
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.err.println("An error occurred.");
             e.printStackTrace();
         }
     }
@@ -297,7 +292,6 @@ public class SVGConverter {
                 for (LinkedList<Spot> spots: paths) {
                     stringBuilder.append("\t<path d=\"");
                     p++;
-                    System.out.println("Path nr. " + p);
                     Spot currentElement;
                     if(!curvedMode || spots.size() <= 2) {
                         currentElement = spots.pop();
@@ -362,7 +356,7 @@ public class SVGConverter {
 
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.err.println("An error occurred.");
             e.printStackTrace();
         }
     }
@@ -427,7 +421,7 @@ public class SVGConverter {
 
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.err.println("An error occurred.");
             e.printStackTrace();
         }
     }
