@@ -1,8 +1,10 @@
-#Wissenschaftlich Technische Visualisierung SS 2020
+# Wissenschaftlich Technische Visualisierung SS 2020
 Ergebnisse von Christopher Oehring
 
-##Generelle Anmerkungen:
-Im nächsten Punkt gibt es eine Übersicht über alle Aufgaben und inwiefern sie implementiert sind. Außerdem gibt es im Packet [demo](src/com/demo) zu einigen Aufgaben eine kleine Demoklasse, die die jeweiligen funktionalitäten demonstriert.  
+Dieses Projekt befindet sich auf GitHub unter https://github.com/ChristopherOehring/wtv20-java
+
+## Generelle Anmerkungen:
+Im nächsten Punkt gibt es eine Übersicht über alle Aufgaben und inwiefern sie implementiert sind. Außerdem gibt es im Packet [demo](src/com/wtv/demo) zu einigen Aufgaben eine kleine Demoklasse, die die jeweiligen funktionalitäten demonstriert.  
 
 **Demos Starten**  
 Es gibt zwei Möglichkeiten die Demos zu starten: 
@@ -25,10 +27,10 @@ Das Generieren visualisieren von Pfaden ist nicht so gut erkennbar, funktioniert
 
 Insgesamt habe ich das Programm nicht systematisch getestet. Von daher gibt es wahrscheinlich noch einige versteckte fehler.
 
-## Ergebnisse anhand der Übungsaufgaben:
-### **Übungsblatt 1**
-#### Aufgabe 2:
-#####`A)` 
+## Ergebnisse anhand der Übungsaufgaben:  
+### **Übungsblatt 1**  
+#### Aufgabe 2:  
+##### `A)`  
 **Implementiert mit Zusatz 1,2,3 und teilweise 4**
 
 Diese Aufgabe wurde in der [CSVReader](src/com/wtv/converter/CSVReader.java) Klasse in der Methode `dateiLesen2D` gelöst. Die Methode ist nicht sehr kompliziert und daher gut lesbar.
@@ -44,8 +46,8 @@ Die erste Lösung dieser Aufgabe wurde zum Lösen anderer Aufgaben weiter modifi
 **Demo:**
 Zur Ausgabe wird eine Datei mit demselben Namen und der Endung .obj erstellt oder überschrieben.
 
-### **Übungsblatt 2**
-#### Aufgabe 1:
+### **Übungsblatt 2**  
+#### Aufgabe 1:  
 ##### `A,B)`
 **Implementiert**
 
@@ -119,7 +121,7 @@ Hierzu gibt es die Methode `SVGCreateIsoFromSegments` in der [SVGConverter](src/
 #### Aufgabe 2
 ##### `A)`
 **Implementiert**  
-In der Klasse [ColorGenerator](src/com/wtv/converter/ColorGenerator.java)
+In der Klasse [ColorGenerator](src/com/wtv/processing/ColorGenerator.java)
 
 ##### `B)`
 **Teilweise Implementiert**  
@@ -158,10 +160,10 @@ Liniensegmente werden per nicht einzeln gespeichert. Hierdurch wird sowohl die L
 
 Es werden Zeilenumbrüche, sowie eine Einrückung mit Tabs vorgenommen.
 
-###**Übungsblatt 5**
+###  **Übungsblatt 5**
 
 #### Aufgabe 2
-#####`A)` 
+##### `A)` 
 **Implementiert**  
 In die Methode `getControlPoints` der Klasse [Curves](src/com/wtv/processing/Curves.java) kann ein Pfad eingegeben werden, woraufhin in der Rückgabe die Kontrollpunkte zwischen den jeweiligen Punkten eingefügt werden.
 

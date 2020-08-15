@@ -30,7 +30,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results" />
+    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="fixing da doc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -431,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597523035864</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Fixing da doc">
+      <created>1597532030073</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1597532030073</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +477,6 @@
     <MESSAGE value="Isolinien die funktionieren und so" />
     <MESSAGE value="fixed a small but fatal error where files could not be overwritten" />
     <MESSAGE value="Deleting some files" />
-    <MESSAGE value="updated some results" />
     <MESSAGE value="Changing package structure" />
     <MESSAGE value="a little cleaning" />
     <MESSAGE value="some fixes of issues with linecolor, uneven line numbers resulting in gaps in the lines and linethickness" />
@@ -482,7 +491,9 @@
     <MESSAGE value="Runnable demos" />
     <MESSAGE value="Fixing da demos" />
     <MESSAGE value="Fixing da doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing da doc" />
+    <MESSAGE value="updated some results" />
+    <MESSAGE value="fixing da doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing da doc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1596470942549">
@@ -595,10 +606,10 @@
     </state>
     <state x="746" y="382" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596045600816" />
     <state x="531" y="288" key="VCS.ChangelistChooser/0.27.1366.711@0.27.1366.711" timestamp="1590277588981" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595719821579">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597532046458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595719821579" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597532046458" />
     <state x="113" y="130" key="Vcs.Push.Dialog.v2/0.27.1366.711@0.27.1366.711" timestamp="1590278385388" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1596123558007">
       <screen x="0" y="0" width="1920" height="1040" />
