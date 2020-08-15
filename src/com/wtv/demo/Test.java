@@ -1,4 +1,4 @@
-package com.demo;
+package com.wtv.demo;
 
 import com.wtv.processing.Curves;
 import com.wtv.structures.Spot;

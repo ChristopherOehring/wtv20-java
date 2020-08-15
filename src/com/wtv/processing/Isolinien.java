@@ -5,6 +5,7 @@ import com.wtv.converter.ObjConverter;
 import com.wtv.converter.SVGConverter;
 import com.wtv.structures.*;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -48,7 +49,7 @@ public class Isolinien {
 
 //Via LineSegments
 
-    public static void printIso(String file, String spaltentrenner, int amount) throws Exception{
+    public static void printIso(String file, String spaltentrenner, int amount) throws IOException{
         double[][] d = CSVReader.dateiLesen2D(file, spaltentrenner);
 
         Map<Double, List<LineSegment>> segments = getIsolinesForArray(d, amount);
@@ -140,7 +141,7 @@ public class Isolinien {
     // A node/"Knoten" is a List of paths
     // A path always has a node at each end
 
-    public static void printIsoByPath(String file, String spaltentrenner, int amount) throws Exception{
+    public static void printIsoByPath(String file, String spaltentrenner, int amount) throws IOException {
         double[][] d = CSVReader.dateiLesen2D(file, spaltentrenner);
         d = CSVReader.invertForSvg(d);
         Map<Double, List<Knoten>> paths = getIsoLinesAsPaths(d, amount);

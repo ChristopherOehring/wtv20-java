@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WTV.iml" filepath="$PROJECT_DIR$/WTV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wtv20-java.iml" filepath="$PROJECT_DIR$/.idea/wtv20-java.iml" />
     </modules>
   </component>
 </project>

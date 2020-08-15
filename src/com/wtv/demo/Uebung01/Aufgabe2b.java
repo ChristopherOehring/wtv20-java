@@ -1,15 +1,39 @@
-package com.demo.Uebung01;
+package com.wtv.demo.Uebung01;
 
 import com.wtv.converter.CSVReader;
 import com.wtv.converter.ObjConverter;
+import com.wtv.demo.Demo;
+import com.wtv.demo.DemoRunner;
 import com.wtv.processing.Isolinien;
+import com.wtv.structures.Pair;
 import com.wtv.structures.Triangle;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class Aufgabe2b {
+public class Aufgabe2b implements Demo {
+    /**
+     * Die Lösung der Aufgabe 2b
+     */
+    public void demo(){
+        Pair<String, String> pair = DemoRunner.getInputCsv("examples\\test.csv", ",");
+        String file = pair.getFirst();
+        String seperator = pair.getSecond();
+
+        try {
+
+            double[][] list = CSVReader.dateiLesen2D(file, seperator);
+            System.out.println(Arrays.deepToString(list).replace("], ", "]\n"));
+
+            List<Triangle> triangles = Isolinien.triangles(list);
+            ObjConverter.objCreateTriangles(triangles, file);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            demo();
+        }
+    }
 
     /**
      * Die Lösung der Aufgabe 2b

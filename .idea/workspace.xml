@@ -26,23 +26,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
-      <change afterPath="$PROJECT_DIR$/examples/pathTest1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/srtm_de_il.csv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/demo/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung05/Aufgabe2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung07/Aufgabe1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/structures/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/wtv20-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/pathTest1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sphere01(1).obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sphere01(2).obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sphere01(3).obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sphere01(4).obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/DemoRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung05/Aufgabe2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung07/Aufgabe1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung4/Aufgabe1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/map03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/test.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung4/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/demo/Uebung4/Aufgabe1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/ColorGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/ColorGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/ObjConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/IsoSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/IsoSurface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung01/Aufgabe2a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung01/Aufgabe2a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung01/Aufgabe2b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung01/Aufgabe2b.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung02/Aufgabe1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung02/Aufgabe2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung03/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung03/Aufgabe1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung05/Aufgabe2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung07/Aufgabe1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung4/Aufgabe1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Rounder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Rounder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +70,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1aqsXUIIQKJ3ThlfSP06WcO6fw5" />
   <component name="ProjectViewState">
@@ -75,7 +85,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/curves" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/wtv" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,26 +98,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Chris\IdeaProjects\wtv20-java\src\com\wtv" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Chris\IdeaProjects\wtv20-java\examples" />
       <recent name="$PROJECT_DIR$/Examples" />
       <recent name="C:\Users\Chris\IdeaProjects\wtv20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IsoSurface">
-    <configuration name="Aufgabe1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung03.Aufgabe1" />
-      <module name="WTV" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo.Uebung03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.DemoRunner">
     <configuration name="Aufgabe1 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.Uebung4.Aufgabe1" />
       <module name="WTV" />
@@ -147,6 +147,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wtv.demo.DemoRunner" />
+      <module name="wtv20-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wtv.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IsoSurface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wtv.processing.IsoSurface" />
       <module name="WTV" />
@@ -161,19 +174,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Aufgabe1 (1)" />
       <item itemvalue="Application.Aufgabe1 (2)" />
       <item itemvalue="Application.Aufgabe2a" />
       <item itemvalue="Application.Aufgabe2 (1)" />
       <item itemvalue="Application.IsoSurface" />
+      <item itemvalue="Application.DemoRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoRunner" />
         <item itemvalue="Application.IsoSurface" />
         <item itemvalue="Application.Aufgabe2 (1)" />
         <item itemvalue="Application.Aufgabe1 (2)" />
         <item itemvalue="Application.Aufgabe2a" />
-        <item itemvalue="Application.Aufgabe1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -460,13 +473,10 @@
     <MESSAGE value="Some more readme and proper Paths" />
     <MESSAGE value="added curves" />
     <MESSAGE value="More fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="More fixing" />
+    <MESSAGE value="Runnable demos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Runnable demos" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
-      <screen x="0" y="27" width="1366" height="711" />
-    </state>
-    <state x="279" y="44" key="#Notifications/0.27.1366.711@0.27.1366.711" timestamp="1588076013438" />
     <state x="552" y="161" key="#Plugins" timestamp="1596470942549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -479,15 +489,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="575" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595713542551" />
-    <state x="142" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.711@0.27.1366.711" timestamp="1588075198113" />
     <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594726111380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594726111380" />
-    <state x="526" y="54" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1588081961178">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="526" y="54" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588081961178" />
     <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1596648339012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -515,10 +520,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595706259554" />
-    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1596395410590">
+    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1597511680425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596395410590" />
+    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597511680425" />
     <state x="2575" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589713065592" />
     <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1590581946433" />
     <state x="491" y="276" key="GitRewordDialog" timestamp="1590278259868">
@@ -569,10 +574,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="753" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595949108493" />
-    <state x="275" y="275" key="SettingsEditor" timestamp="1596282940386">
+    <state x="275" y="189" key="SettingsEditor" timestamp="1597511733919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="275" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596282940386" />
+    <state x="275" y="189" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597511733919" />
     <state x="746" y="382" key="VCS.ChangelistChooser" timestamp="1596045600816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -618,15 +623,6 @@
     <state x="443" y="181" width="672" height="464" key="search.everywhere.popup/0.27.1366.711@0.27.1366.711" timestamp="1590197005334" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java</url>
-          <line>169</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="spots.get(0)" />

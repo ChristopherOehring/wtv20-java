@@ -1,4 +1,4 @@
-package com.demo;
+package com.wtv.demo;
 
 public class Input {
     public static void readInput(){
