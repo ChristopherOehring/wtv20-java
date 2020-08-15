@@ -1,7 +1,7 @@
-#Wissenschaftlich Technische Visualisierung SS 2020
+# Wissenschaftlich Technische Visualisierung SS 2020
 Ergebnisse von Christopher Oehring
 
-##Generelle Anmerkungen:
+## Generelle Anmerkungen:
 Nachfolgend gibt es eine Übersicht über alle Aufgaben und inwiefern sie implementiert sind. Außerdem gibt es im packet demo zu jeder Aufgabe eine kleine demo Klasse, die die jeweiligen funktionalitäten demonstriert.  
 
 Weitere Informationen zu den jeweiligen Demos befinden sich unten in der Übersicht. 
