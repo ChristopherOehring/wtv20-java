@@ -8,8 +8,8 @@ Im nächsten Punkt gibt es eine Übersicht über alle Aufgaben und inwiefern sie
 
 **Demos Starten**  
 Es gibt zwei Möglichkeiten die Demos zu starten: 
-1. Das Project per Git clonen und in eine IDE wie IntelliJ oder Eclipse importieren und anschließend den [DemoRunner](src/com/wtv/demo/DemoRunner.java) per IDE starten.
-2. Das projekt per Git clonen oder herunterladen und entpacken. In einer commandozeile in das Projekt hinein navigieren, und folgenden befehl ausführen: 
+1. Das Project in eine IDE wie IntelliJ oder Eclipse importieren und anschließend den [DemoRunner](src/com/wtv/demo/DemoRunner.java) per IDE starten.
+2. Das projekt per Git clonen oder herunterladen und entpacken. In einer commandozeile in das Projekt hinein navigieren, und folgenden Befehl ausführen: 
  `java -jar .\out\artifacts\wtv20_java_jar\wtv20-java.jar`
 
 Hinweis: für diesen Befehl wird eine Installation von Java 8 oder höher benötigt.

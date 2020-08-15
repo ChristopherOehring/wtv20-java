@@ -51,7 +51,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1aqsXUIIQKJ3ThlfSP06WcO6fw5" />
   <component name="ProjectViewState">
@@ -441,7 +440,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597532030073</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fixing da doc">
+      <created>1597535023755</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1597535023755</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixing da doc">
+      <created>1597535258381</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1597535258381</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,6 +509,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixing da doc" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="845" y="383" key="#Notifications" timestamp="1597535338319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597535338319" />
     <state x="552" y="161" key="#Plugins" timestamp="1596470942549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -593,6 +610,14 @@
     </state>
     <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596365930449" />
     <state width="1316" height="225" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1597535377020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597535377020" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1597535377027">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597535377027" />
     <state x="753" y="222" key="RollbackChangesDialog" timestamp="1597515345762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -606,19 +631,19 @@
     </state>
     <state x="746" y="382" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596045600816" />
     <state x="531" y="288" key="VCS.ChangelistChooser/0.27.1366.711@0.27.1366.711" timestamp="1590277588981" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597532046458">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597535387572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597532046458" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597535387572" />
     <state x="113" y="130" key="Vcs.Push.Dialog.v2/0.27.1366.711@0.27.1366.711" timestamp="1590278385388" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1596123558007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596123558007" />
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596125639405">
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597535356438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596125639405" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597535356438" />
     <state x="2103" y="-11" width="1545" height="651" maximized="true" key="dock-window-1" timestamp="1596043899717">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
