@@ -1,8 +1,8 @@
-#Wissenschaftlich Technische Visualisierung SS 2020
+# Wissenschaftlich Technische Visualisierung SS 2020
 Ergebnisse von Christopher Oehring
 
-##Generelle Anmerkungen:
-Im nächsten Punkt gibt es eine Übersicht über alle Aufgaben und inwiefern sie implementiert sind. Außerdem gibt es im Packet [demo](src/com/demo) zu einigen Aufgaben eine kleine Demoklasse, die die jeweiligen funktionalitäten demonstriert.  
+## Generelle Anmerkungen:
+Im nächsten Punkt gibt es eine Übersicht über alle Aufgaben und inwiefern sie implementiert sind. Außerdem gibt es im Packet [demo](src/com/wtv/demo) zu einigen Aufgaben eine kleine Demoklasse, die die jeweiligen funktionalitäten demonstriert.  
 
 **Demos Starten**  
 Es gibt zwei Möglichkeiten die Demos zu starten: 
@@ -119,7 +119,7 @@ Hierzu gibt es die Methode `SVGCreateIsoFromSegments` in der [SVGConverter](src/
 #### Aufgabe 2
 ##### `A)`
 **Implementiert**  
-In der Klasse [ColorGenerator](src/com/wtv/converter/ColorGenerator.java)
+In der Klasse [ColorGenerator](src/com/wtv/processing/ColorGenerator.java)
 
 ##### `B)`
 **Teilweise Implementiert**  
