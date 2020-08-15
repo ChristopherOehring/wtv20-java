@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="wtv20-java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/wtv20_java_jar</output-path>
+    <root id="archive" name="wtv20-java.jar">
+      <element id="module-output" name="wtv20-java" />
+    </root>
+  </artifact>
+</component>

@@ -340,7 +340,13 @@ public class SVGConverter {
                             .append("\" stroke=\"").append(color)
                             .append("\" stroke-width=\"").append(rounder.roundToString(scale* thickness)).append("\" fill=\"none\" /> \n");
 
-                    if (visualizePaths) thickness = thickness + 0.02;
+                    if (visualizePaths) {
+                        thickness = thickness + 0.02;
+                        if (thickness >= SVGConverter.thickness+0.1) {
+                            thickness-=0.1;
+                        }
+                    }
+
                 }
 
             }

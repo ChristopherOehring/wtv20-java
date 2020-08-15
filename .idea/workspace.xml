@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="wtv20-java:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,16 +30,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/U2A2a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/U2A2a.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/CSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/demo/DemoRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/DemoRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/demo/Uebung02/Aufgabe1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Interpolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Interpolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" afterDir="false" />
-    </list>
+    <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,9 +70,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.41149426" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -414,7 +410,28 @@
       <option name="project" value="LOCAL" />
       <updated>1597512245587</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fixing da demos">
+      <created>1597515462397</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1597515462397</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixing da demos">
+      <created>1597515485722</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1597515485723</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Fixing da doc">
+      <created>1597523035864</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1597523035864</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +480,9 @@
     <MESSAGE value="added curves" />
     <MESSAGE value="More fixing" />
     <MESSAGE value="Runnable demos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Runnable demos" />
+    <MESSAGE value="Fixing da demos" />
+    <MESSAGE value="Fixing da doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing da doc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1596470942549">
@@ -487,6 +506,10 @@
     </state>
     <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596648339012" />
     <state x="518" y="113" key="#com.intellij.ide.util.MemberChooser/0.27.1366.711@0.27.1366.711" timestamp="1590501996401" />
+    <state x="525" y="405" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597516919985">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="525" y="405" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597516919985" />
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596470963138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -519,25 +542,25 @@
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="491" y="276" key="GitRewordDialog/0.27.1366.711@0.27.1366.711" timestamp="1590278259868" />
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1597515108808">
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1597517900920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597517900920" />
     <state width="1316" height="146" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1597515108808">
+    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1597517900919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597517900919" />
     <state width="1316" height="146" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1597515108808">
+    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1597517900919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597517900919" />
     <state width="1316" height="146" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1591036724689" />
-    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1597515108808">
+    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1597517900919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515108808" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597517900919" />
     <state width="1316" height="146" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
     <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1596365930449">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -559,14 +582,14 @@
     </state>
     <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596365930449" />
     <state width="1316" height="225" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
-    <state x="753" y="222" key="RollbackChangesDialog" timestamp="1595949108493">
+    <state x="753" y="222" key="RollbackChangesDialog" timestamp="1597515345762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595949108493" />
-    <state x="275" y="189" key="SettingsEditor" timestamp="1597511733919">
+    <state x="753" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597515345762" />
+    <state x="275" y="189" key="SettingsEditor" timestamp="1597517889896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="275" y="189" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597511733919" />
+    <state x="275" y="189" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597517889896" />
     <state x="746" y="382" key="VCS.ChangelistChooser" timestamp="1596045600816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -605,10 +628,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596636866552" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596470865710">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597520091710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596470865710" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597520091710" />
     <state x="443" y="181" width="672" height="464" key="search.everywhere.popup/0.27.1366.711@0.27.1366.711" timestamp="1590197005334" />
   </component>
   <component name="XDebuggerManager">

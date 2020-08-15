@@ -70,18 +70,18 @@ public class Curves {
 
         double ft = 0.25;
 
-        var d01 = d(p0,p1);
-        var d12 = d(p1,p2);
-        var d23 = d(p2,p3);
+        double d01 = d(p0,p1);
+        double d12 = d(p1,p2);
+        double d23 = d(p2,p3);
 
-        var tax = (p2.getX()-p1.getX())/d12+(p1.getX()-p0.getX())/d01;
-        var tay = (p2.getY()-p1.getY())/d12+(p1.getY()-p0.getY())/d01;
-        var tbx = (p1.getX()-p2.getX())/d12+(p2.getX()-p3.getX())/d23;
-        var tby = (p1.getY()-p2.getY())/d12+(p2.getY()-p3.getY())/d23;
-        var xa = p1.getX() + ft*d12*tax;
-        var ya = p1.getY() + ft*d12*tay;
-        var xb = p2.getX() + ft*d12*tbx;
-        var yb = p2.getY() + ft*d12*tby;
+        double tax = (p2.getX()-p1.getX())/d12+(p1.getX()-p0.getX())/d01;
+        double tay = (p2.getY()-p1.getY())/d12+(p1.getY()-p0.getY())/d01;
+        double tbx = (p1.getX()-p2.getX())/d12+(p2.getX()-p3.getX())/d23;
+        double tby = (p1.getY()-p2.getY())/d12+(p2.getY()-p3.getY())/d23;
+        double xa = p1.getX() + ft*d12*tax;
+        double ya = p1.getY() + ft*d12*tay;
+        double xb = p2.getX() + ft*d12*tbx;
+        double yb = p2.getY() + ft*d12*tby;
 
         return new Pair<>(new Spot(xa, ya), new Spot(xb, yb));
     }
