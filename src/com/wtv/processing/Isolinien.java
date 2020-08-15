@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 
 public class Isolinien {
 
+    public static Rounder rounder = new Rounder();
+
     public static void main(String[] args) throws Exception {
         /*
         Point a = new Point(0,0,0);
@@ -298,9 +300,9 @@ public class Isolinien {
         }
 
         for (Triangle t: triangles) {
-            t.a.z = Rounder.round(t.a.z);
-            t.b.z = Rounder.round(t.b.z);
-            t.c.z = Rounder.round(t.c.z);
+            t.a.z = rounder.round(t.a.z);
+            t.b.z = rounder.round(t.b.z);
+            t.c.z = rounder.round(t.c.z);
 
         }
 
@@ -315,9 +317,9 @@ public class Isolinien {
         List<LineSegment> result = new ArrayList<>();
         for(Triangle t: triangles){
             LineSegment s = intersectionOfTriangle(t, lineHeight);
-            s = Rounder.round(s, 13); //workaround for some rounding errors in double values
+            s = rounder.round(s, 13); //workaround for some rounding errors in double values
             if(s != null){
-                //s = Rounder.round(s);
+                //s = rounder.round(s);
                 if (!result.contains(s)) {        // prevent duplicates
                     result.add(s);
                 }
@@ -406,6 +408,14 @@ public class Isolinien {
                     points.get(1).x, points.get(1).y);
         }
         return null;
+    }
+
+    public static Rounder getRounder() {
+        return rounder;
+    }
+
+    public static void setRounder(Rounder rounder) {
+        Isolinien.rounder = rounder;
     }
 }
 

@@ -1,5 +1,6 @@
 package com.wtv.converter;
 
+import com.wtv.processing.ColorGenerator;
 import com.wtv.processing.Curves;
 import com.wtv.processing.Rounder;
 import com.wtv.structures.Knoten;
@@ -12,12 +13,35 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
-import static com.wtv.processing.Rounder.round;
-
 public class SVGConverter {
+    /**
+     * Determines the thickness of the lines in the written SVGs <br>
+     * Note: the thickness is also affected by {@link #scale}
+     */
     public static double thickness = 0.05;
-    public static boolean curvedMode = true;
-    public static boolean visualizePaths = true;
+
+    /**
+     * causes the lines to be curved with bezier curves. <br>
+     * This only affects {@link #writeFileFromPath(Map, String, int, int)}
+     */
+    public static boolean curvedMode = false;
+
+    /**
+     * Causes individual paths to be visualized by differing thickness <br>
+     * This only affects {@link #writeFileFromPath(Map, String, int, int)}
+     */
+    public static boolean visualizePaths = false;
+
+    /**
+     * This can be used to up/downscale the result.
+     * Its 10 by default because the given examples can be pretty small otherwise.
+     */
+    public static double scale = 10.0;
+
+    /**
+     * This object is used for all Rounding Operations
+     */
+    public static Rounder rounder = new Rounder();
 
     public static void main(String[] args) throws Exception{
         SVGCreate(args[0]);
@@ -137,9 +161,9 @@ public class SVGConverter {
                 for (LineSegment lS : segments.get(d)) {
                     stringBuilder
                             .append("<path d=\"M ")
-                            .append(round(lS.p1x)*scale).append(",").append(round(lS.p1y)*scale)
-                            .append(" l ").append(round(lS.p2x - lS.p1x)*scale)
-                            .append(",").append(round(lS.p2y - lS.p1y)*scale)
+                            .append(rounder.round(lS.p1x)*scale).append(",").append(rounder.round(lS.p1y)*scale)
+                            .append(" l ").append(rounder.round(lS.p2x - lS.p1x)*scale)
+                            .append(",").append(rounder.round(lS.p2y - lS.p1y)*scale)
                             .append("\" stroke=\"").append(color)
                             .append("\" stroke-width=\"").append(thickness*scale).append("\" /> \n");
                 }
@@ -198,9 +222,9 @@ public class SVGConverter {
                         PathNode currentElement = missed.pop();
                         stringBuilder
                                 .append("M ")
-                                .append(Rounder.roundToString(currentElement.getX() * scale))
+                                .append(rounder.roundToString(currentElement.getX() * scale))
                                 .append(",")
-                                .append(Rounder.roundToString(currentElement.getY() * scale))
+                                .append(rounder.roundToString(currentElement.getY() * scale))
                                 .append(" ");
                         while (currentElement.getFollowing().size()>0) { //iterate trough each element
                             PathNode nextNode = currentElement.getFollowing().iterator().next();
@@ -213,16 +237,16 @@ public class SVGConverter {
                             currentElement = nextNode;
                             stringBuilder
                                     .append("L ")
-                                    .append(Rounder.roundToString(currentElement.getX() * scale))
+                                    .append(rounder.roundToString(currentElement.getX() * scale))
                                     .append(",")
-                                    .append(Rounder.roundToString(currentElement.getY() * scale))
+                                    .append(rounder.roundToString(currentElement.getY() * scale))
                                     .append(" ");
                         }
                     }
                 }
                 stringBuilder
                         .append("\" stroke=\"").append(color)
-                        .append("\" stroke-width=\"").append(Rounder.roundToString(thickness)).append("\" fill=\"none\" /> \n");
+                        .append("\" stroke-width=\"").append(rounder.roundToString(thickness)).append("\" fill=\"none\" /> \n");
             }
 
             stringBuilder.append("</svg>");
@@ -244,8 +268,6 @@ public class SVGConverter {
     private static void writeFileFromPath(Map<Double, List<Knoten>> isoLines,
                                                String filePath, int width, int height){
         try {
-
-            double scale = 10; //can be used to scale the output map
 
             StringBuilder stringBuilder = new StringBuilder("<svg xmlns=\"http://www.w3.org/2000/svg\" ")
                     .append("version=\"1.1\" x=\"1\" y=\"1\" ")
@@ -281,48 +303,50 @@ public class SVGConverter {
                         currentElement = spots.pop();
                         stringBuilder
                                 .append("M ")
-                                .append(Rounder.roundToString(currentElement.getX() * scale))
+                                .append(rounder.roundToString(currentElement.getX() * scale))
                                 .append(",")
-                                .append(Rounder.roundToString(currentElement.getY() * scale))
+                                .append(rounder.roundToString(currentElement.getY() * scale))
                                 .append(" ");
                         while (!spots.isEmpty()) {
                             currentElement = spots.pop();
                             stringBuilder
                                     .append("L ")
-                                    .append(Rounder.roundToString(currentElement.getX() * scale))
+                                    .append(rounder.roundToString(currentElement.getX() * scale))
                                     .append(",")
-                                    .append(Rounder.roundToString(currentElement.getY() * scale))
+                                    .append(rounder.roundToString(currentElement.getY() * scale))
                                     .append(" ");
                         }
-                    } else {
+                    }
+                    else {
                         spots = Curves.getControlPoints(spots);
                         currentElement = spots.pop();
                         stringBuilder
                                 .append("M ")
-                                .append(Rounder.roundToString(currentElement.getX() * scale))
+                                .append(rounder.roundToString(currentElement.getX() * scale))
                                 .append(",")
-                                .append(Rounder.roundToString(currentElement.getY() * scale))
+                                .append(rounder.roundToString(currentElement.getY() * scale))
                                 .append(" ");
                         while (!spots.isEmpty()) {
                             currentElement = spots.pop();
                             stringBuilder
                                     .append("C ")
-                                    .append(Rounder.roundToString(currentElement.getX() * scale)).append(" ")
-                                    .append(Rounder.roundToString(currentElement.getY() * scale)).append(", ");
+                                    .append(rounder.roundToString(currentElement.getX() * scale)).append(" ")
+                                    .append(rounder.roundToString(currentElement.getY() * scale)).append(", ");
                             currentElement = spots.pop();
                             stringBuilder
-                                    .append(Rounder.roundToString(currentElement.getX() * scale)).append(" ")
-                                    .append(Rounder.roundToString(currentElement.getY() * scale)).append(", ");
+                                    .append(rounder.roundToString(currentElement.getX() * scale)).append(" ")
+                                    .append(rounder.roundToString(currentElement.getY() * scale)).append(", ");
                             currentElement = spots.pop();
                             stringBuilder
-                                    .append(Rounder.roundToString(currentElement.getX() * scale)).append(" ")
-                                    .append(Rounder.roundToString(currentElement.getY() * scale)).append(" ");
+                                    .append(rounder.roundToString(currentElement.getX() * scale)).append(" ")
+                                    .append(rounder.roundToString(currentElement.getY() * scale)).append(" ");
                         }
                     }
                     stringBuilder
                             .append("\" stroke=\"").append(color)
-                            .append("\" stroke-width=\"").append(Rounder.roundToString(thickness)).append("\" fill=\"none\" /> \n");
-                    thickness *= 1.01;
+                            .append("\" stroke-width=\"").append(rounder.roundToString(scale* thickness)).append("\" fill=\"none\" /> \n");
+
+                    if (visualizePaths) thickness = thickness + 0.02;
                 }
 
             }
@@ -341,6 +365,38 @@ public class SVGConverter {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+    }
+
+    public static double getThickness() {
+        return thickness;
+    }
+
+    public static void setThickness(double thickness) {
+        SVGConverter.thickness = thickness;
+    }
+
+    public static boolean isCurvedMode() {
+        return curvedMode;
+    }
+
+    public static void setCurvedMode(boolean curvedMode) {
+        SVGConverter.curvedMode = curvedMode;
+    }
+
+    public static boolean isVisualizePaths() {
+        return visualizePaths;
+    }
+
+    public static void setVisualizePaths(boolean visualizePaths) {
+        SVGConverter.visualizePaths = visualizePaths;
+    }
+
+    public static double getScale() {
+        return scale;
+    }
+
+    public static void setScale(double scale) {
+        SVGConverter.scale = scale;
     }
 
     private static void writeFileLines2(List<LineSegment> segments,
@@ -376,4 +432,11 @@ public class SVGConverter {
         }
     }
 
+    public static Rounder getRounder() {
+        return rounder;
+    }
+
+    public static void setRounder(Rounder rounder) {
+        SVGConverter.rounder = rounder;
+    }
 }

@@ -2,6 +2,7 @@ package com.wtv.converter;
 
 import com.wtv.processing.Rounder;
 import com.wtv.structures.Point;
+import com.wtv.structures.Square;
 import com.wtv.structures.Triangle;
 
 import java.io.File;
@@ -12,6 +13,8 @@ import java.util.List;
 import java.util.Set;
 
 public class ObjConverter {
+
+    public static Rounder rounder = new Rounder();
 
     public static void objCreateTriangles(List<Triangle> triangles, String filePath) {
         String newFilePath = createFileRawInput(filePath);
@@ -41,6 +44,11 @@ public class ObjConverter {
     public static void objCreateCubes(Set<Point> points, String filePath) {
         String newFilePath = createFileRawInput(filePath);
         writeFileCubes(points, newFilePath);
+    }
+
+    public static void objCreateSquares(Set<Square> squares, String filePath) {
+        String newFilePath = createFileRawInput(filePath);
+        writeFileSquares(squares, newFilePath);
     }
 
     /**
@@ -194,28 +202,28 @@ public class ObjConverter {
 
 
                 double[] v0Int = new double[]{p.x + offset, p.y + offset, p.z + offset};
-                String[] v0 = Arrays.stream(v0Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//0 +++
+                String[] v0 = Arrays.stream(v0Int).mapToObj(rounder::roundToString).toArray(String[]::new);//0 +++
 
                 double[] v1Int = new double[]{p.x + offset, p.y + offset, p.z - offset};
-                String[] v1 = Arrays.stream(v1Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//1 ++-
+                String[] v1 = Arrays.stream(v1Int).mapToObj(rounder::roundToString).toArray(String[]::new);//1 ++-
 
                 double[] v2Int = new double[]{p.x + offset, p.y - offset, p.z + offset};
-                String[] v2 = Arrays.stream(v2Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//2 +-+
+                String[] v2 = Arrays.stream(v2Int).mapToObj(rounder::roundToString).toArray(String[]::new);//2 +-+
 
                 double[] v3Int = new double[]{p.x - offset, p.y + offset, p.z + offset};
-                String[] v3 = Arrays.stream(v3Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//3 -++
+                String[] v3 = Arrays.stream(v3Int).mapToObj(rounder::roundToString).toArray(String[]::new);//3 -++
 
                 double[] v4Int = new double[]{p.x + offset, p.y - offset, p.z - offset};
-                String[] v4 = Arrays.stream(v4Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//4 +--
+                String[] v4 = Arrays.stream(v4Int).mapToObj(rounder::roundToString).toArray(String[]::new);//4 +--
 
                 double[] v5Int = new double[]{p.x - offset, p.y - offset, p.z + offset};
-                String[] v5 = Arrays.stream(v5Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//5 --+
+                String[] v5 = Arrays.stream(v5Int).mapToObj(rounder::roundToString).toArray(String[]::new);//5 --+
 
                 double[] v6Int = new double[]{p.x - offset, p.y + offset, p.z - offset};
-                String[] v6 = Arrays.stream(v6Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//6 -+-
+                String[] v6 = Arrays.stream(v6Int).mapToObj(rounder::roundToString).toArray(String[]::new);//6 -+-
 
                 double[] v7Int = new double[]{p.x - offset, p.y - offset, p.z - offset};
-                String[] v7 = Arrays.stream(v7Int).mapToObj(Rounder::roundToString).toArray(String[]::new);//7 ---
+                String[] v7 = Arrays.stream(v7Int).mapToObj(rounder::roundToString).toArray(String[]::new);//7 ---
 
                 builder.append(String.format("v %1$s %2$s %3$s\n", v0[0], v0[1], v0[2]))//0 +++
                         .append(String.format("v %1$s %2$s %3$s\n", v1[0], v1[1], v1[2]))//1 ++-
@@ -232,6 +240,37 @@ public class ObjConverter {
                         .append(String.format("f %1$s %2$s %3$s %4$s\n", i + 0, i + 3, i + 6, i + 1))
                         .append(String.format("f %1$s %2$s %3$s %4$s\n", i + 2, i + 5, i + 7, i + 4));
                 i = i + 8;
+            }
+
+
+            FileWriter myWriter = new FileWriter(filePath, false);
+            myWriter.write(builder.toString());
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+    private static void writeFileSquares(Set<Square> squares, String filePath) {
+        try {
+            StringBuilder builder = new StringBuilder();
+            builder.append("o ").append(filePath).append("\n");
+            double offset = 0.5;
+            int i = 1;
+            for (Square s : squares) {
+                Point a = s.getA();
+                Point b = s.getB();
+                Point c = s.getC();
+                Point d = s.getD();
+
+                builder.append(String.format("v %1$s %2$s %3$s\n", a.x, a.y, a.z))
+                        .append(String.format("v %1$s %2$s %3$s\n",b.x, b.y, b.z))
+                        .append(String.format("v %1$s %2$s %3$s\n",c.x, c.y, c.z))
+                        .append(String.format("v %1$s %2$s %3$s\n",d.x, d.y, d.z))
+                        .append(String.format("f %1$s %2$s %3$s %4$s\n", i, i + 1, i + 2, i + 3));
+                i = i + 4;
             }
 
 
@@ -276,4 +315,12 @@ public class ObjConverter {
         }
     }
     */
+
+    public static Rounder getRounder() {
+        return rounder;
+    }
+
+    public static void setRounder(Rounder rounder) {
+        ObjConverter.rounder = rounder;
+    }
 }

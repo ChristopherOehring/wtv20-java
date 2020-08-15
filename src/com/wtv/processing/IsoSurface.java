@@ -19,13 +19,27 @@ public class IsoSurface {
     }
 
     public static void printIsoCubes(String fileName, int lineAmount) throws IOException {
-        double[][][] result = CSVReader.dateiLesen3D("examples/sphere01.csv");
+        double[][][] result = CSVReader.dateiLesen3D(fileName);
         assert result != null;
         double[] lineHeights = lineHeights(lineAmount, findMin(result), findMax(result));
+        int i = 0;
         for(double h: lineHeights){
-            ObjConverter.objCreateCubes(findIso(result, h), fileName.split("\\.")[0] + "(" + h + ")");
+            i++;
+            ObjConverter.objCreateCubes(findIso(result, h), fileName.split("\\.")[0] + "(" + i + ")");
         }
     }
+
+    public static void printIsoTetrahedrons(String fileName, int lineAmount) throws IOException {
+        double[][][] result = CSVReader.dateiLesen3D(fileName);
+        assert result != null;
+        double[] lineHeights = lineHeights(lineAmount, findMin(result), findMax(result));
+        int i = 0;
+        for(double h: lineHeights){
+            i++;
+            ObjConverter.objCreateTetrahedrons(findIso(result, h), fileName.split("\\.")[0] + "(" + i + ")");
+        }
+    }
+
 
     public static double[] lineHeights(int amount, double min, double max) {
         double[] result = new double[amount];

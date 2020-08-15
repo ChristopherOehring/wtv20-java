@@ -26,17 +26,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7777c92a-44d3-4f1c-a1b5-85c20b09dc56" name="Default Changelist" comment="updated some results">
-      <change afterPath="$PROJECT_DIR$/src/com/demo/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wtv/processing/Curves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/pathTest1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/srtm_de_il.csv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung05/Aufgabe2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/Uebung07/Aufgabe1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wtv/structures/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/map01_res3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map01_res3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/map03.obj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/map03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/map03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/test.svg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/test.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/test.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/demo/Uebung4/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/demo/Uebung4/Aufgabe1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/ColorGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/ColorGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/ObjConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/ObjConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wtv/structures/Spot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/structures/Spot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/IsoSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/IsoSurface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wtv/processing/Rounder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wtv/processing/Rounder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +89,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chris\IdeaProjects\wtv20-java\examples" />
       <recent name="$PROJECT_DIR$/Examples" />
       <recent name="C:\Users\Chris\IdeaProjects\wtv20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Aufgabe1 (2)">
+  <component name="RunManager" selected="Application.IsoSurface">
     <configuration name="Aufgabe1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.Uebung03.Aufgabe1" />
       <module name="WTV" />
@@ -114,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Aufgabe1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung02.Aufgabe1" />
+    <configuration name="Aufgabe2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung05.Aufgabe2" />
       <module name="WTV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.Uebung02.*" />
+          <option name="PATTERN" value="com.demo.Uebung05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Aufgabe2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung02.Aufgabe2" />
+    <configuration name="Aufgabe2a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.Uebung01.Aufgabe2a" />
       <module name="WTV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.Uebung02.*" />
+          <option name="PATTERN" value="com.demo.Uebung01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.Test" />
+    <configuration name="IsoSurface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wtv.processing.IsoSurface" />
       <module name="WTV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.*" />
+          <option name="PATTERN" value="com.wtv.processing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,19 +161,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Aufgabe1" />
-      <item itemvalue="Application.Aufgabe2" />
       <item itemvalue="Application.Aufgabe1 (1)" />
       <item itemvalue="Application.Aufgabe1 (2)" />
-      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Aufgabe2a" />
+      <item itemvalue="Application.Aufgabe2 (1)" />
+      <item itemvalue="Application.IsoSurface" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsoSurface" />
+        <item itemvalue="Application.Aufgabe2 (1)" />
         <item itemvalue="Application.Aufgabe1 (2)" />
+        <item itemvalue="Application.Aufgabe2a" />
         <item itemvalue="Application.Aufgabe1 (1)" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Aufgabe2" />
-        <item itemvalue="Application.Aufgabe1" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +227,15 @@
       <workItem from="1596144818146" duration="2415000" />
       <workItem from="1596192298163" duration="1519000" />
       <workItem from="1596279066403" duration="4179000" />
-      <workItem from="1596361569223" duration="2494000" />
+      <workItem from="1596361569223" duration="10703000" />
+      <workItem from="1596465121165" duration="4674000" />
+      <workItem from="1596470955196" duration="24000" />
+      <workItem from="1596471091169" duration="600000" />
+      <workItem from="1596626606048" duration="6617000" />
+      <workItem from="1596788111727" duration="1757000" />
+      <workItem from="1597140947125" duration="2622000" />
+      <workItem from="1597266915309" duration="18000" />
+      <workItem from="1597499018804" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -383,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596045729320</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added curves">
+      <created>1596364696958</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1596364696958</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,13 +451,18 @@
     <MESSAGE value="some documentation and small fixes" />
     <MESSAGE value="Aufräumen für abgabe ist im gange" />
     <MESSAGE value="Some more readme and proper Paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some more readme and proper Paths" />
+    <MESSAGE value="added curves" />
+    <option name="LAST_COMMIT_MESSAGE" value="added curves" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="279" y="44" key="#Notifications/0.27.1366.711@0.27.1366.711" timestamp="1588076013438" />
+    <state x="552" y="161" key="#Plugins" timestamp="1596470942549">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596470942549" />
     <state x="2360" y="94" key="#Project_Structure" timestamp="1591474552018">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -453,11 +480,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="54" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588081961178" />
-    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1596125290876">
+    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1596648339012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596125290876" />
+    <state x="728" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596648339012" />
     <state x="518" y="113" key="#com.intellij.ide.util.MemberChooser/0.27.1366.711@0.27.1366.711" timestamp="1590501996401" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596470963138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596470963138" />
     <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594649922338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -476,55 +507,55 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595706259554" />
-    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1596114129165">
+    <state x="655" y="151" width="432" height="483" key="FileChooserDialogImpl" timestamp="1596395410590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596114129165" />
+    <state x="655" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596395410590" />
     <state x="2575" y="151" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589713065592" />
     <state x="466" y="130" width="432" height="483" key="FileChooserDialogImpl/0.27.1366.711@0.27.1366.711" timestamp="1590581946433" />
     <state x="491" y="276" key="GitRewordDialog" timestamp="1590278259868">
       <screen x="0" y="27" width="1366" height="711" />
     </state>
     <state x="491" y="276" key="GitRewordDialog/0.27.1366.711@0.27.1366.711" timestamp="1590278259868" />
-    <state width="1876" height="348" key="GridCell.Tab.0.bottom" timestamp="1596193202841">
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1596655528950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202841" />
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
     <state width="1316" height="146" key="GridCell.Tab.0.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="348" key="GridCell.Tab.0.center" timestamp="1596193202841">
+    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1596655528950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202841" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
     <state width="1316" height="146" key="GridCell.Tab.0.center/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="348" key="GridCell.Tab.0.left" timestamp="1596193202841">
+    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1596655528950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202841" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
     <state width="1316" height="146" key="GridCell.Tab.0.left/0.27.1366.711@0.27.1366.711" timestamp="1591036724689" />
-    <state width="1876" height="348" key="GridCell.Tab.0.right" timestamp="1596193202841">
+    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1596655528950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202841" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596655528950" />
     <state width="1316" height="146" key="GridCell.Tab.0.right/0.27.1366.711@0.27.1366.711" timestamp="1591036724690" />
-    <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1596193202842">
+    <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1596365930449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202842" />
+    <state width="1876" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596365930449" />
     <state width="1316" height="225" key="GridCell.Tab.1.bottom/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
-    <state width="1876" height="348" key="GridCell.Tab.1.center" timestamp="1596193202841">
+    <state width="1876" height="348" key="GridCell.Tab.1.center" timestamp="1596365930449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202841" />
+    <state width="1876" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596365930449" />
     <state width="1316" height="225" key="GridCell.Tab.1.center/0.27.1366.711@0.27.1366.711" timestamp="1591036331940" />
-    <state width="1876" height="348" key="GridCell.Tab.1.left" timestamp="1596193202841">
+    <state width="1876" height="348" key="GridCell.Tab.1.left" timestamp="1596365930449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202841" />
+    <state width="1876" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596365930449" />
     <state width="1316" height="225" key="GridCell.Tab.1.left/0.27.1366.711@0.27.1366.711" timestamp="1591036331940" />
-    <state width="1876" height="348" key="GridCell.Tab.1.right" timestamp="1596193202841">
+    <state width="1876" height="348" key="GridCell.Tab.1.right" timestamp="1596365930449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596193202841" />
+    <state width="1876" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596365930449" />
     <state width="1316" height="225" key="GridCell.Tab.1.right/0.27.1366.711@0.27.1366.711" timestamp="1591036331941" />
     <state x="753" y="222" key="RollbackChangesDialog" timestamp="1595949108493">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -568,39 +599,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596028201388" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595937357686">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1596636866552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595937357686" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596636866552" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596470865710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596470865710" />
     <state x="443" y="181" width="672" height="464" key="search.everywhere.popup/0.27.1366.711@0.27.1366.711" timestamp="1590197005334" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/wtv/converter/ObjConverter.java</url>
-          <line>195</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/wtv/processing/Isolinien.java</url>
-          <line>167</line>
+          <line>169</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java</url>
-          <line>281</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java</url>
-          <line>305</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/wtv/converter/SVGConverter.java</url>
-          <line>298</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,4 +1,4 @@
-package com.wtv.converter;
+package com.wtv.processing;
 
 import com.wtv.processing.Interpolation;
 
@@ -11,6 +11,12 @@ public class ColorGenerator {
         return String.format("rgb(%s,%s,%s)",x[0],x[1],x[2]);
     }
 
+    /**
+     * generates the colors for iso lines
+     * @param anz the number of iso lines
+     * @param pos select one iso line
+     * @return returns a int array of size 3 with the respective rgb values
+     */
     public static int[] lineColor(int anz, int pos){
         anz++;
         pos++;
