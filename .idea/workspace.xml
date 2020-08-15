@@ -235,7 +235,7 @@
       <workItem from="1596788111727" duration="1757000" />
       <workItem from="1597140947125" duration="2622000" />
       <workItem from="1597266915309" duration="18000" />
-      <workItem from="1597499018804" duration="599000" />
+      <workItem from="1597499018804" duration="925000" />
     </task>
     <task id="LOCAL-00001" summary="Vorlesung vom 28.04.">
       <created>1588101202361</created>
@@ -405,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596364696958</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="More fixing">
+      <created>1597502724339</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1597502724339</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +459,8 @@
     <MESSAGE value="Aufräumen für abgabe ist im gange" />
     <MESSAGE value="Some more readme and proper Paths" />
     <MESSAGE value="added curves" />
-    <option name="LAST_COMMIT_MESSAGE" value="added curves" />
+    <MESSAGE value="More fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="More fixing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="44" key="#Notifications" timestamp="1588076013438">
