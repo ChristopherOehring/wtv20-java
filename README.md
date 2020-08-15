@@ -226,7 +226,7 @@ In der Methode `objCreateTetrahedrons` der Klasse [ObjConverter](src/com/wtv/con
 
 Durch die Methode `printIsoTetrahedrons` der Klasse [IsoSurface](src/com/wtv/processing/IsoSurface.java)
 
-Ein Ergebnis sieht z.B. so aus: <img src="src\com\wtv\converter\doc-files\tetrahedrons.png">
+Ein Ergebnis sieht z.B. so aus: <img src="src\com\wtv\converter\doc-files\tetrahedrons.PNG">
 ##### `F)`
 **Implementiert**
 
